@@ -8,14 +8,15 @@ import { useState } from 'react'
 function MyApp({ Component, pageProps }) {
   const [Custom, setCustom] = useState({
     theme: "",
-    complexity: "",
+    complexity: "minimalist",
     language: "english"
   });
   console.log(JSON.stringify(Custom))
   return (
     <div className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
-      <main className="bg-primary">
-        <Nav/>
+      <a href="#mainContent" className="skip-link">Skip to main content</a>
+      <Nav/>
+      <main id="mainContent" tabIndex={-1} className="bg-primary">
         <section>
           <Component {...pageProps} />
         </section>

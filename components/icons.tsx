@@ -12,10 +12,10 @@ const menu_mobile: any =
     </svg>
   </>
 
-const down_arrow: any =
+const list: any =
   <>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-      <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
     </svg>
   </>
 
@@ -61,7 +61,7 @@ const minimalist: any =
 const ICONS: any = {
     adjustments: adjustments,
     menu_mobile: menu_mobile,
-    down_arrow: down_arrow,
+    list: list,
     arabic2Eng: arabic2Eng,
     eng2Arabic: eng2Arabic,
     light: light,

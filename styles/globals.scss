@@ -37,5 +37,26 @@
   }
 }
 
+.skip-link{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #BF1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  &:focus{
+    top: 0;
+  }
+}
+
+.navigation{
+  background: var(--secondary);
+  li a{
+    display: block;
+    border-radius: 1rem;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;

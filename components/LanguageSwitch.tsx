@@ -15,7 +15,7 @@ export default function LanguageSwitch({ setLanguage, Custom }) {
   }
 
 return (
-    <button className="" onClick={()=> {handleICON(); handlelanguage()}}>
+    <button aria-label="Arabic to English and vice versa" className="" onClick={()=> {handleICON(); handlelanguage()}}>
         {icon}
     </button>
     )

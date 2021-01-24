@@ -29,4 +29,7 @@
   1. Set static routes :heavy_check_mark:
   2. Set dynamic routes
   3. Set styling
-  4. Configure Accessibility
+    * Mobile view
+    * Desktop view
+
+* Configure Accessibility
