@@ -1,16 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Montserrat&family=Rakkas&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Lateef&display=swap");
+@tailwind base;
+:root {
+  --primary: #79A542;
+  --secondary: #CFF0A5;
+  --third: #CFF0A5;
+  --inverse: #0f0f0f;
+  --font-mono: "Roboto Mono",monospace;
+  --font-sans: "Montserrat", sans-serif;
+}
+:root .arabic {
+  --font-mono: "Amiri", serif;
+  --font-sans: "Rakkas", cursive;
+}
+:root .dark {
+  --primary: #03004C;
+  --secondary: #6A1497;
+  --third: #E61D6D;
+  --inverse: #7C54E1;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.minimalist {
+  --third: #98999B;
+  --inverse: transparent;
+  --primary: #FEFDF8;
+  --secondary: #0f0f0f;
+}
+.minimalist.dark {
+  --primary: #0f0f0f;
+  --secondary: #FEFDF8;
+}
+.minimalist.arabic {
+  --font-mono: "Aref Ruqaa", serif;
+  --font-sans: "Lateef", cursive;
 }
 
-* {
-  box-sizing: border-box;
-}
+@tailwind components;
+@tailwind utilities;
+
+/*# sourceMappingURL=globals.css.map */

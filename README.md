@@ -1,30 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Tasks
 
-## Getting Started
+* Tailwind theme switching :heavy_check_mark:
+  1. default :heavy_check_mark:
+    * light :heavy_check_mark:
+    * dark :heavy_check_mark:
+  2. minimalist :heavy_check_mark:
+    * light :heavy_check_mark:
+    * dark :heavy_check_mark:
 
-First, run the development server:
+* Language theme switching
+  1. icons :heavy_check_mark:
+  2. Content switching
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+* Icons dynamic stroke color
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Set default fonts :heavy_check_mark:
+  1. 'Montserrat', sans-serif :heavy_check_mark:
+  2. 'Inconsolata', monospace :heavy_check_mark:
+  3. arabic fonts :heavy_check_mark:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* Set adjustment portal
+  1. Change the color scheme
+  2. Change the font family
+  3. Change the font size
+  4. Change the complexity
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Set Nav bar
+  1. Set static routes :heavy_check_mark:
+  2. Set dynamic routes
+  3. Set styling
+  4. Configure Accessibility

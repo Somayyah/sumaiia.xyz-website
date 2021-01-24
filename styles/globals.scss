@@ -1,0 +1,41 @@
+@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Montserrat&family=Rakkas&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Lateef&display=swap');
+
+:root {
+  --primary:  #79A542;;
+  --secondary: #CFF0A5;
+  --third: #CFF0A5;
+  --inverse: #0f0f0f;
+  --font-mono: 'Roboto Mono',monospace;
+  --font-sans: 'Montserrat', sans-serif;
+  & .arabic {
+    --font-mono: 'Amiri', serif;
+    --font-sans: 'Rakkas', cursive;
+  }
+  & .dark {
+    --primary: #03004C;
+    --secondary: #6A1497;
+    --third: #E61D6D;
+    --inverse: #7C54E1;
+  }
+}
+
+
+.minimalist {
+  --third: #98999B;
+  --inverse: transparent;
+  --primary: #FEFDF8;
+  --secondary: #0f0f0f;
+  &.dark {
+    --primary: #0f0f0f;
+    --secondary: #FEFDF8;
+  }
+  &.arabic {
+    --font-mono: 'Aref Ruqaa', serif;
+    --font-sans: 'Lateef', cursive;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
