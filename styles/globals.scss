@@ -25,11 +25,11 @@
 .minimalist {
   --third: #98999B;
   --inverse: transparent;
-  --primary: #FEFDF8;
+  --primary: #fefefe;
   --secondary: #0f0f0f;
   &.dark {
     --primary: #0f0f0f;
-    --secondary: #FEFDF8;
+    --secondary: #fefefe;
   }
   &.arabic {
     --font-mono: 'Aref Ruqaa', serif;
@@ -50,11 +50,24 @@
   }
 }
 
-.navigation{
-  background: var(--secondary);
-  li a{
-    display: block;
-    border-radius: 1rem;
+@screen xsm{
+  .navigation{
+    background: var(--secondary);
+    @apply rounded-lg text-primary m-4 shadow-xl;
+    li a{
+      @apply block px-4 py-1;
+    }
+    &.nav-visible-false{
+      @apply hidden
+    }
+  }
+
+  .hamburger {
+    width: 100vw;
+    svg{
+      display: block;
+      vertical-align: middle;
+    }
   }
 }
 
