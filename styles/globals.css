@@ -23,12 +23,12 @@
 .minimalist {
   --third: #98999B;
   --inverse: transparent;
-  --primary: #FEFDF8;
+  --primary: #fefefe;
   --secondary: #0f0f0f;
 }
 .minimalist.dark {
   --primary: #0f0f0f;
-  --secondary: #FEFDF8;
+  --secondary: #fefefe;
 }
 .minimalist.arabic {
   --font-mono: "Aref Ruqaa", serif;
@@ -48,14 +48,26 @@
   top: 0;
 }
 
-.navigation {
-  background: var(--secondary);
-}
-.navigation li a {
-  display: block;
-  border-radius: 1rem;
-}
+@screen xsm {
+  .navigation {
+    background: var(--secondary);
+    @apply rounded-lg text-primary m-4 shadow-xl;
+  }
+  .navigation li a {
+    @apply block px-4 py-1;
+  }
+  .navigation.nav-visible-false {
+    @apply hidden;
+  }
 
+  .hamburger {
+    width: 100vw;
+  }
+
+  .switchTheme {
+    height: 100vw;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 

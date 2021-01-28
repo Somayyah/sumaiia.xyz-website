@@ -13,21 +13,21 @@ function MyApp({ Component, pageProps }) {
   });
   console.log(JSON.stringify(Custom))
   return (
-    <div className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
+    <body className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
       <a href="#mainContent" className="skip-link">Skip to main content</a>
       <Nav/>
-      <main id="mainContent" tabIndex={-1} className="bg-primary">
+      <main id="mainContent" tabIndex={-1} className="bg-primary text-secondary">
         <section>
           <Component {...pageProps} />
         </section>
-        <section>
+        <section id="#customize">
           <ThemeButton setTheme={setCustom} Custom={Custom}/>
           <LanguageSwitcher setLanguage={setCustom} Custom={Custom}/>
           <Complex setComplexity={setCustom} Custom={Custom}/>
         </section>
       </main>
       <footer>empty footer</footer>
-    </div>
+    </body>
   )
 }
 
