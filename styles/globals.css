@@ -60,12 +60,23 @@
     @apply hidden;
   }
 
-  .hamburger {
-    width: 100vw;
+  .icon {
+    @apply block absolute;
   }
-
-  .switchTheme {
-    height: 100vw;
+  .icon.hamburger {
+    right: 2%;
+    margin: 10px 0;
+  }
+  .icon.hamburger svg {
+    width: 35px;
+  }
+  .icon.switchTheme {
+    right: 50%;
+    bottom: 10%;
+    padding: 10px;
+    background: blue;
+    display: flex;
+    align-items: center;
   }
 }
 @tailwind components;
