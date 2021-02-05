@@ -52,34 +52,34 @@
 
 @screen xsm{
   .navigation{
-    background: var(--secondary);
-    @apply rounded-lg text-primary m-4 shadow-xl;
-    li a{
-      @apply block px-4 py-1;
+    @apply text-secondary text-2xl font-mono;
+    ul {
+      @apply  m-auto w-11/12 py-4;
+      li{
+        @apply inline;
+        a{
+          @apply px-6;
+        }
+      }
     }
     &.nav-visible-false{
       @apply hidden
     }
   }
 
-  .icon{
-    @apply block absolute;
-    &.hamburger {
-      right: 2%;
-      margin: 10px 0;
-      svg{
-        width: 35px;
+  
+  main{
+    #customize {
+      @apply fixed inline-block py-4 w-full;
+      top: 85%;
+      button {
+        @apply bg-secondary p-4;
+        span{
+          width: 60px;
+        }
       }
     }
-
-    &.switchTheme{
-      right: 50%;
-      bottom: 10%;
-      padding: 10px;
-      background: blue;
-    }
   }
-
 }
 
 @tailwind components;

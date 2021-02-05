@@ -2,10 +2,13 @@ import ICONS from '../components/icons'
 import { useState } from 'react'
 
 export default function LanguageSwitch({ setLanguage, Custom }) {
+  const [label, setLabel] = useState("ترجم الموقع الى العربية")
   const [icon, setIcon] = useState(ICONS.arabic2Eng)
 
   const handleICON = () => {
-    icon === ICONS.arabic2Eng ? setIcon(ICONS.arabic2Eng) : setIcon(ICONS.arabic2Eng)
+    icon === ICONS.arabic2Eng 
+    ? () => { setIcon(ICONS.eng2Arabic) ; setLabel("Translate website to English");}
+    : () => { setIcon(ICONS.arabic2Eng) ; setLabel("ترجم الموقع الى العربية")}
   }
 
   const handlelanguage = () => {
@@ -15,7 +18,7 @@ export default function LanguageSwitch({ setLanguage, Custom }) {
   }
 
 return (
-    <button aria-label="Arabic to English and vice versa" className="" onClick={()=> {handleICON(); handlelanguage()}}>
+    <button aria-label={label} className="" onClick={()=> {handleICON(); handlelanguage()}}>
         {icon}
     </button>
     )

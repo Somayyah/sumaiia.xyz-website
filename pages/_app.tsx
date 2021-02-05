@@ -11,16 +11,17 @@ function MyApp({ Component, pageProps }) {
     complexity: "minimalist",
     language: "english"
   });
-  console.log(JSON.stringify(Custom))
   return (
     <body className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
       <a href="#mainContent" className="skip-link">Skip to main content</a>
-      <Nav/>
+      <section>
+        <Nav/>
+      </section>
       <main id="mainContent" tabIndex={-1} className="bg-primary text-secondary">
         <section>
           <Component {...pageProps} />
         </section>
-        <section id="#customize">
+        <section id="customize">
           <ThemeButton setTheme={setCustom} Custom={Custom}/>
           <LanguageSwitcher setLanguage={setCustom} Custom={Custom}/>
           <Complex setComplexity={setCustom} Custom={Custom}/>

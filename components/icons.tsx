@@ -1,27 +1,18 @@
-const adjustments: string = "/images/adjustments.svg"
+import { Twemoji } from 'react-emoji-render';
 
-const menu_mobile: string = "/images/menu_mobile.svg"
+const arabic2Eng: any = <Twemoji text=":us:"/>
 
-const list: string = "/images/list.svg"
+const eng2Arabic: any = <Twemoji text=":flag_saudi_arabia:"/>
 
-const arabic2Eng: string = "/images/arabic2Eng.svg"
+const light: any = <Twemoji text=":sun:"/>
 
-// <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+const dark: any = <Twemoji text=":waxing_crescent_moon:"/>
 
-const eng2Arabic: string = "/images/eng2Arabic.svg"
+const complex: any = <Twemoji text=":sparkles:"/>
 
-const light: string = "/images/light.svg"
-
-const dark: string = "/images/dark.svg"
-
-const complex: string = "/images/complex.svg"
-
-const minimalist: string = "/images/minimalist"
+const minimalist: any = <Twemoji text=":star:"/>
 
 const ICONS: any = {
-    adjustments: adjustments,
-    menu_mobile: menu_mobile,
-    list: list,
     arabic2Eng: arabic2Eng,
     eng2Arabic: eng2Arabic,
     light: light,

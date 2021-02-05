@@ -50,33 +50,30 @@
 
 @screen xsm {
   .navigation {
-    background: var(--secondary);
-    @apply rounded-lg text-primary m-4 shadow-xl;
+    @apply text-secondary text-2xl font-mono;
   }
-  .navigation li a {
-    @apply block px-4 py-1;
+  .navigation ul {
+    @apply m-auto w-11/12 py-4;
+  }
+  .navigation ul li {
+    @apply inline;
+  }
+  .navigation ul li a {
+    @apply px-6;
   }
   .navigation.nav-visible-false {
     @apply hidden;
   }
 
-  .icon {
-    @apply block absolute;
+  main #customize {
+    @apply fixed inline-block py-4 w-full;
+    top: 85%;
   }
-  .icon.hamburger {
-    right: 2%;
-    margin: 10px 0;
+  main #customize button {
+    @apply bg-secondary p-4;
   }
-  .icon.hamburger svg {
-    width: 35px;
-  }
-  .icon.switchTheme {
-    right: 50%;
-    bottom: 10%;
-    padding: 10px;
-    background: blue;
-    display: flex;
-    align-items: center;
+  main #customize button span {
+    width: 60px;
   }
 }
 @tailwind components;

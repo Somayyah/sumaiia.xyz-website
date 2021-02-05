@@ -3,21 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "npm run cass && next dev",
+    "build": "npm run cass && next build",
+    "start": "npm run cass && next start",
+    "cass": "sass styles/globals.scss styles/globals.css"
   },
   "dependencies": {
-    "@svgr/webpack": "^5.5.0",
     "autoprefixer": "^10.2.1",
-    "material-jsx-icons": "^1.0.0",
     "next": "10.0.5",
     "next-images": "^1.7.0",
-    "next-react-svg": "^1.1.2",
     "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-query": "^3.5.16",
+    "react-emoji-render": "^1.2.4",
     "sass": "^1.32.5",
     "tailwindcss": "^2.0.2"
   },
