@@ -52,19 +52,16 @@
 
 @screen xsm{
  
-  .navigation{
+  nav{
     @apply text-secondary text-2xl font-mono bg-primary;
     ul {
-      @apply  m-auto w-11/12 py-4;
+      @apply  w-11/12 py-4 right-1/2;
       li{
         @apply inline;
         a{
           @apply px-6;
         }
       }
-    }
-    &.nav-visible-false{
-      @apply hidden
     }
   }
 
@@ -86,7 +83,7 @@
   }
 
   footer{
-    @apply fixed left-0 bottom-0 w-full bg-secondary text-primary text-center;
+    @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center;
   }
 }
 

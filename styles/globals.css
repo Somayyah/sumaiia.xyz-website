@@ -49,20 +49,17 @@
 }
 
 @screen xsm {
-  .navigation {
+  nav {
     @apply text-secondary text-2xl font-mono bg-primary;
   }
-  .navigation ul {
-    @apply m-auto w-11/12 py-4;
+  nav ul {
+    @apply w-11/12 py-4 right-1/2;
   }
-  .navigation ul li {
+  nav ul li {
     @apply inline;
   }
-  .navigation ul li a {
+  nav ul li a {
     @apply px-6;
-  }
-  .navigation.nav-visible-false {
-    @apply hidden;
   }
 
   main #customize {
@@ -80,7 +77,7 @@
   }
 
   footer {
-    @apply fixed left-0 bottom-0 w-full bg-secondary text-primary text-center;
+    @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center;
   }
 }
 @tailwind components;
