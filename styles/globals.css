@@ -50,7 +50,7 @@
 
 @screen xsm {
   .navigation {
-    @apply text-secondary text-2xl font-mono;
+    @apply text-secondary text-2xl font-mono bg-primary;
   }
   .navigation ul {
     @apply m-auto w-11/12 py-4;
@@ -77,6 +77,10 @@
     @apply mx-3;
     width: 35px !important;
     height: 35px !important;
+  }
+
+  footer {
+    @apply fixed left-0 bottom-0 w-full bg-secondary text-primary text-center;
   }
 }
 @tailwind components;

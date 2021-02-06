@@ -5,11 +5,10 @@
   "scripts": {
     "dev": "npm run cass && next dev",
     "build": "npm run cass && next build",
-    "start": "npm run cass && next start",
+    "start": "next start",
     "cass": "sass styles/globals.scss styles/globals.css"
   },
   "dependencies": {
-    "@xdn/cli": "^2.43.0",
     "autoprefixer": "^10.2.1",
     "next": "10.0.5",
     "next-images": "^1.7.0",

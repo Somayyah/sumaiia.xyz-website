@@ -51,8 +51,9 @@
 }
 
 @screen xsm{
+ 
   .navigation{
-    @apply text-secondary text-2xl font-mono;
+    @apply text-secondary text-2xl font-mono bg-primary;
     ul {
       @apply  m-auto w-11/12 py-4;
       li{
@@ -68,6 +69,7 @@
   }
 
   main{
+
     #customize {
       @apply inline fixed py-4;
       top: 85%;
@@ -81,6 +83,10 @@
         }
       }
     }
+  }
+
+  footer{
+    @apply fixed left-0 bottom-0 w-full bg-secondary text-primary text-center;
   }
 }
 
