@@ -18,7 +18,28 @@ export default function Home() {
         <span>React.js</span>, <span>Kubernetes </span>
         and much more. Here, I document my projects, interests and a way to
         reach me out. I always try to diversify my Knowledge and challenge
-        myself. Stay tuned!!
+        myself. <span className="stayTuned">Stay tuned!!</span>
+      </div>
+      <div>
+        <h1>What I use</h1>
+        <ul>
+          <li>next js</li>
+          <li>React js</li>
+          <li>C++</li>
+          <li>Linux</li>
+          <li>Docker</li>
+          <li>Google Cloud Platform</li>
+          <li>HTML5/CSS3/JS/TS</li>
+        </ul>
+      </div>
+      <div>
+        <h1>Find me at:</h1>
+        <ul>
+          <li>linkedIn</li>
+          <li>github</li>
+          <li>codepen</li>
+          <li>YouTube</li>
+        </ul>
       </div>
     </>
   )

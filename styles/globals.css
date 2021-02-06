@@ -21,7 +21,7 @@
 }
 
 .minimalist {
-  --third: #98999B;
+  --third: #7a7c81;
   --inverse: transparent;
   --primary: #fefefe;
   --secondary: #0f0f0f;
@@ -51,12 +51,13 @@
 @screen xsm {
   .minimalist {
     @apply font-sans;
+    @apply font-sans;
   }
   .minimalist .active {
     @apply border-secondary border-b-2 py-4;
   }
   .minimalist nav {
-    @apply text-secondary text-xl font-mono;
+    @apply text-third bg-primary text-xl font-mono font-bold;
   }
   .minimalist nav ul {
     @apply text-center m-auto w-11/12 py-4 right-1/2;
@@ -83,11 +84,14 @@
     width: 35px !important;
     height: 35px !important;
   }
-  .minimalist main.pageContent.introduction {
-    @apply text-lg;
+  .minimalist main .pageContent .introduction {
+    @apply text-3xl px-6 py-6 leading-7 tracking-wide;
   }
-  .minimalist main.pageContent.introduction span {
-    @apply underline text-primary;
+  .minimalist main .pageContent .introduction span {
+    @apply font-mono font-bold text-third leading-9;
+  }
+  .minimalist main .pageContent .introduction span.stayTuned {
+    @apply block text-center py-5 font-extrabold;
   }
   .minimalist footer {
     @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;

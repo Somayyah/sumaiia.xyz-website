@@ -3,6 +3,7 @@ import Nav from '../components/Nav'
 import ThemeButton from '../components/themeCustomizeButton'
 import LanguageSwitcher from '../components/LanguageSwitch'
 import Complex from '../components/ComplexitySwitch'
+import Footer from '../components/Footer'
 import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
@@ -27,7 +28,7 @@ function MyApp({ Component, pageProps }) {
           <Complex setComplexity={setCustom} Custom={Custom}/>
         </section>
       </main>
-      <footer  aria-label="footer">empty footer</footer>
+      <Footer />
     </div>
   )
 }

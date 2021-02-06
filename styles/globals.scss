@@ -23,7 +23,7 @@
 
 
 .minimalist {
-  --third: #98999B;
+  --third: #7a7c81;
   --inverse: transparent;
   --primary: #fefefe;
   --secondary: #0f0f0f;
@@ -53,12 +53,13 @@
 @screen xsm{
 
   .minimalist{
+    @apply font-sans;
     .active{
       @apply  border-secondary border-b-2 py-4;
     }
     @apply font-sans;
     nav{
-      @apply text-secondary text-xl font-mono;
+      @apply text-third bg-primary text-xl font-mono font-bold;
       ul {
         @apply text-center m-auto w-11/12 py-4 right-1/2;
         li{
@@ -86,11 +87,14 @@
         }
       }
 
-      &.pageContent{
-        &.introduction{
-          @apply text-lg;
+      & .pageContent{
+        & .introduction{
+          @apply text-3xl px-6 py-6 leading-7 tracking-wide;
           span{
-            @apply underline text-primary;
+            @apply font-mono font-bold text-third leading-9;
+            &.stayTuned{
+              @apply block text-center py-5 font-extrabold;
+            }
           }
         }
       }
