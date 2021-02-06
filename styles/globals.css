@@ -49,35 +49,42 @@
 }
 
 @screen xsm {
-  nav {
-    @apply text-secondary text-2xl font-mono bg-primary;
+  .minimalist {
+    @apply font-sans;
   }
-  nav ul {
-    @apply w-11/12 py-4 right-1/2;
+  .minimalist .active {
+    @apply border-secondary border-b-2 py-4;
   }
-  nav ul li {
+  .minimalist nav {
+    @apply text-secondary text-2xl font-mono;
+  }
+  .minimalist nav ul {
+    @apply text-center m-auto w-11/12 py-4 right-1/2;
+  }
+  .minimalist nav ul li {
     @apply inline;
   }
-  nav ul li a {
-    @apply px-6;
+  .minimalist nav ul li a {
+    @apply px-2;
   }
-
-  main #customize {
+  .minimalist main {
+    @apply bg-primary text-secondary;
+  }
+  .minimalist main #customize {
     @apply inline fixed py-4;
-    top: 85%;
+    top: 88%;
     right: calc(50vw - (52.2px + 3rem));
   }
-  main #customize button {
+  .minimalist main #customize button {
     @apply px-4;
   }
-  main #customize button span img[style] {
+  .minimalist main #customize button span img[style] {
     @apply mx-3;
     width: 35px !important;
     height: 35px !important;
   }
-
-  footer {
-    @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center;
+  .minimalist footer {
+    @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
   }
 }
 @tailwind components;

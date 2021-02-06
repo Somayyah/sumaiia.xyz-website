@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       <section aria-label="navigation menu">
         <Nav/>
       </section>
-      <main id="mainContent" tabIndex={-1} className="bg-primary text-secondary">
+      <main id="mainContent" tabIndex={-1}>
         <section aria-label="main content">
           <Component {...pageProps} />
         </section>

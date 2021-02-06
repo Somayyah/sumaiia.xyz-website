@@ -40,6 +40,14 @@ module.exports = {
       white: 'var(--white)',
       black: 'var(--black)',
     },
+    borderColor: {
+      primary: 'var(--primary)',
+      secondary: 'var(--secondary)',
+      third: 'var(--third)',
+      inverse: 'var(--inverse)',
+      white: 'var(--white)',
+      black: 'var(--black)',
+    },
     fontFamily: {
       'sans': 'var(--font-sans)',
       'mono': 'var(--font-mono)',

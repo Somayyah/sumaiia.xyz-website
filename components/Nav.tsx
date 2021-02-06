@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "./ActiveLink";
 import { useState } from 'react'
 
 function Nav() {
