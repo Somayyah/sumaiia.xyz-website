@@ -10,7 +10,7 @@ function Nav() {
 				<ul className="">
 					<li>
 						<Link href="/">
-							<a onClick={() => setOpened(false)}>Main</a>
+							<a onClick={() => setOpened(false)}>About me</a>
 						</Link>
 					</li>
 					<li>

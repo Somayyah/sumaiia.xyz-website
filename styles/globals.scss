@@ -58,7 +58,7 @@
     }
     @apply font-sans;
     nav{
-      @apply text-secondary text-2xl font-mono;
+      @apply text-secondary text-xl font-mono;
       ul {
         @apply text-center m-auto w-11/12 py-4 right-1/2;
         li{
@@ -82,6 +82,15 @@
             @apply mx-3;
             width: 35px !important;
             height: 35px !important;
+          }
+        }
+      }
+
+      &.pageContent{
+        &.introduction{
+          @apply text-lg;
+          span{
+            @apply underline text-primary;
           }
         }
       }

@@ -56,7 +56,7 @@
     @apply border-secondary border-b-2 py-4;
   }
   .minimalist nav {
-    @apply text-secondary text-2xl font-mono;
+    @apply text-secondary text-xl font-mono;
   }
   .minimalist nav ul {
     @apply text-center m-auto w-11/12 py-4 right-1/2;
@@ -82,6 +82,12 @@
     @apply mx-3;
     width: 35px !important;
     height: 35px !important;
+  }
+  .minimalist main.pageContent.introduction {
+    @apply text-lg;
+  }
+  .minimalist main.pageContent.introduction span {
+    @apply underline text-primary;
   }
   .minimalist footer {
     @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;

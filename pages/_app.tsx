@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <Nav/>
       </section>
       <main id="mainContent" tabIndex={-1}>
-        <section aria-label="main content">
+        <section aria-label="main content" className="pageContent">
           <Component {...pageProps} />
         </section>
         <section id="customize"  aria-label="customize the website">
