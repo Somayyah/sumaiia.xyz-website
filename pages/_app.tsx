@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
     language: "english"
   });
   return (
-    <body className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
+    <div className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
       <a href="#mainContent" className="skip-link">Skip to main content</a>
       <section>
         <Nav/>
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         </section>
       </main>
       <footer>empty footer</footer>
-    </body>
+    </div>
   )
 }
 

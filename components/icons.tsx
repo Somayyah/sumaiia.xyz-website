@@ -8,9 +8,9 @@ const light: any = <Twemoji text=":sun:"/>
 
 const dark: any = <Twemoji text=":waxing_crescent_moon:"/>
 
-const complex: any = <Twemoji text=":sparkles:"/>
+const complex: any = <Twemoji text=":thunder_cloud_and_rain:"/>
 
-const minimalist: any = <Twemoji text=":star:"/>
+const minimalist: any = <Twemoji text=":cloud:"/>
 
 const ICONS: any = {
     arabic2Eng: arabic2Eng,

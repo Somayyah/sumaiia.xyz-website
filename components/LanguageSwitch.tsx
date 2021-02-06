@@ -7,10 +7,15 @@ export default function LanguageSwitch({ setLanguage, Custom }) {
 
   const handleICON = () => {
     icon === ICONS.arabic2Eng 
-    ? () => { setIcon(ICONS.eng2Arabic) ; setLabel("Translate website to English");}
-    : () => { setIcon(ICONS.arabic2Eng) ; setLabel("ترجم الموقع الى العربية")}
+    ? setIcon(ICONS.eng2Arabic) 
+    : setIcon(ICONS.arabic2Eng)
   }
 
+  const handlLabel = () => {
+    label === "ترجم الموقع الى العربية" ? 
+    setLabel("Translate website to English") 
+    : setLabel("ترجم الموقع الى العربية");
+  }
   const handlelanguage = () => {
     Custom.language === "english" ?
       setLanguage({...Custom,language: "arabic"})
@@ -18,7 +23,7 @@ export default function LanguageSwitch({ setLanguage, Custom }) {
   }
 
 return (
-    <button aria-label={label} className="" onClick={()=> {handleICON(); handlelanguage()}}>
+    <button aria-label={label} className="language" onClick={()=> {handleICON(); handlelanguage(); handlLabel()}}>
         {icon}
     </button>
     )
