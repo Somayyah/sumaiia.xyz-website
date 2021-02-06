@@ -14,20 +14,20 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
       <a href="#mainContent" className="skip-link">Skip to main content</a>
-      <section>
+      <section aria-label="navigation menu">
         <Nav/>
       </section>
       <main id="mainContent" tabIndex={-1} className="bg-primary text-secondary">
-        <section>
+        <section aria-label="main content">
           <Component {...pageProps} />
         </section>
-        <section id="customize">
+        <section id="customize"  aria-label="customize the website">
           <ThemeButton setTheme={setCustom} Custom={Custom}/>
           <LanguageSwitcher setLanguage={setCustom} Custom={Custom}/>
           <Complex setComplexity={setCustom} Custom={Custom}/>
         </section>
       </main>
-      <footer>empty footer</footer>
+      <footer  aria-label="footer">empty footer</footer>
     </div>
   )
 }

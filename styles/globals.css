@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Lateef&display=swap");
 @tailwind base;
 :root {
-  --primary: #79A542;
-  --secondary: #CFF0A5;
-  --third: #CFF0A5;
-  --inverse: #0f0f0f;
+  --primary: #fcf4ec;
+  --secondary: #6c844c;
+  --third:#646464;
+  --inverse: #fcc4cc;
   --font-mono: "Roboto Mono",monospace;
   --font-sans: "Montserrat", sans-serif;
 }
@@ -68,15 +68,15 @@
   main #customize {
     @apply inline fixed py-4;
     top: 85%;
-    right: calc(50vw - (50px + 2.25rem));
+    right: calc(50vw - (52.2px + 3rem));
   }
   main #customize button {
-    @apply px-3;
+    @apply px-4;
   }
   main #customize button span img[style] {
     @apply mx-3;
-    width: 30px !important;
-    height: 30px !important;
+    width: 35px !important;
+    height: 35px !important;
   }
 }
 @tailwind components;

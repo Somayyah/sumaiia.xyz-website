@@ -6,7 +6,7 @@ function Nav() {
 
 	return (
 		<>
-			<nav aria-label="navigation menu" className={`navigation nav-visible`}>
+			<nav className={`navigation`}>
 				<ul className="">
 					<li>
 						<Link href="/">

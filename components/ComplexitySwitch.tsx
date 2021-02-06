@@ -2,7 +2,7 @@ import ICONS from '../components/icons'
 import { useState } from 'react'
 
 export default function ComplexitySwitch({ setComplexity, Custom }) {
-  const [mode, setMode] = useState(ICONS.complex)
+  const [mode, setMode] = useState(ICONS.minimalist)
 
   const handleICON = () => {
     mode === ICONS.complex ? setMode(ICONS.minimalist) : setMode(ICONS.complex)
