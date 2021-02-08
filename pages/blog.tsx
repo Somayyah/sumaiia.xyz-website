@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from "next/link"
 
 export default function Blog() {
   return (
@@ -11,7 +12,9 @@ export default function Blog() {
         />
         <title>Blog - alt f4</title>
       </Head>
-      Blog page
+      <Link href="/first">
+        <a>Go to posts</a>
+      </Link>
     </>
   )
 }
