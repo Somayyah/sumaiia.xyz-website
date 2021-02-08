@@ -1,9 +1,11 @@
+import dynamic from 'next/dynamic'
 import '../styles/globals.css'
 import Nav from '../components/Nav'
 import ThemeButton from '../components/themeCustomizeButton'
 import LanguageSwitcher from '../components/LanguageSwitch'
 import Complex from '../components/ComplexitySwitch'
-import Footer from '../components/Footer'
+
+const Footer = dynamic(() => import('../components/Footer'))
 import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {

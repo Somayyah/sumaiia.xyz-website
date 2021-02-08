@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
-
-const DynamicBrief = dynamic(() => import('../components/Brief'))
+import DynamicBrief from '../components/Brief'
 
 export default function Home() {
   return (
