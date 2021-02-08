@@ -13,7 +13,7 @@ const Brief = () => {
         reach me out. I always try to diversify my Knowledge and challenge
         myself. <span className="stayTuned">Stay tuned!!</span>
             </div>
-            <div>
+            <div className="WhatIUse">
                 <h1>What I use</h1>
                 <ul>
                     <li>next js</li>
@@ -25,7 +25,7 @@ const Brief = () => {
                     <li>HTML5/CSS3/JS/TS</li>
                 </ul>
             </div>
-            <div>
+            <div className="ContactInfo">
                 <h1>Find me at:</h1>
                 <ul>
                     <li>linkedIn</li>

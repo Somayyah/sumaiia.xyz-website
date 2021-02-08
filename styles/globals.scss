@@ -21,7 +21,6 @@
   }
 }
 
-
 .minimalist {
   --third: #7a7c81;
   --inverse: transparent;
@@ -97,11 +96,18 @@
             }
           }
         }
+        h1{
+          @apply text-third text-4xl pt-16 font-bold text-center;
+        }
+
+        ul{
+          
+        }
       }
     }
     
     footer{
-      @apply fixed left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
+      @apply left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
     }
   }
 }
