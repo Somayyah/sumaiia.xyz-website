@@ -1,9 +1,14 @@
 import Head from 'next/head'
-import parse from 'html-react-parser'
 import { GetStaticProps } from 'next'
 import dynamic from "next/dynamic"
 
+const Intro = dynamic(import("../components/Intro"))
+const WhatIUse = dynamic(import("../components/WhatIUse"))
+const Contact = dynamic(import("../components/Contact"))
+
+
 export default function Home(props) {
+//  console.log(props.introduction)
   return (
     <>
       <Head>
@@ -13,24 +18,9 @@ export default function Home(props) {
           content="For DevOps, frontend and cloud computing. I write about IT automation, python, Controversial opinions, UI/UX design and Google Cloud Platform." />
         <title>alt f4 - DevOps, Frontend, Cloud and Daring opinions</title>
       </Head>
-      <div className='WhatIUse'>
-        <h1>What I use</h1>
-        <hr/>
-        <ul>
-          {props.WhatIUse.list.map(item => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="ContactInfo">
-        <h1>Find me at</h1>
-        <hr/>
-        <ul>
-          {props.ContactInfo.list.map(item => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </div>
+      <Intro prop={props.introduction}/>
+      <WhatIUse prop={props.WhatIUse}/>
+      <Contact prop={props.ContactInfo}/>
     </>
   )
 }
