@@ -12,7 +12,7 @@ export default function Blog() {
         />
         <title>Blog - alt f4</title>
       </Head>
-      <Link href="/first">
+      <Link href="/posts/first">
         <a>Go to posts</a>
       </Link>
     </>

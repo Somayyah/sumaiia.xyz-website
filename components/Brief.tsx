@@ -1,57 +1,78 @@
-import dynamic from 'next/dynamic'
+import { GetStaticProps } from 'next'
 
-const Intro = dynamic(() => import('./Introduction'))
-const WhatIUse = dynamic(() => import('./WhatIuse'))
-const Contact = dynamic(() => import('./Contact'))
+interface template {
+    title: string;
+    list: string[];
+}
 
+interface intro {
+    content:string;
+}
 
 const Brief = (props) => {
+
+    console.log(props)
     return (
         <>
-            <Intro prop={props[0]} />
-            <WhatIUse prop={props[1]} />
-            <Contact prop={props[2]} />
+            
         </>
     )
 }
 
-export async function getStaticProps() {
-    const WhatIUse = <div className="WhatIUse">
-        <h1>What I use</h1>
-        <ul>
-            <li>next js</li>
-            <li>React js</li>
-            <li>C++</li>
-            <li>Linux</li>
-            <li>Docker</li>
-            <li>Google Cloud Platform</li>
-            <li>HTML5/CSS3/JS/TS</li>
-        </ul>
-    </div>
+/*
+<div className="introduction">
+                <p>{props.introduction.content}</p>
+                <h1 className="stayTuned">Stay tuned!!</h1>
+            </div>
+            <div className='WhatIUse'>
+                <h1>What I use</h1>
+                <ul>
+                    {props.WhatIUse.list.map( item => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className="ContactInfo">
+                <h1>Find me at</h1>
+                <ul>
+                    {props.ContactInfo.list.map( item => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+*/
 
-    const introduction = <div className="introduction">
-        I'm a self-taught programmer with a passion for anything{" "}
-        <span>Linux</span>,<span> Networking</span>, <span>DevOps</span> and{" "}
-        <span>web development</span>. I write about{" "}
-        <span>Cloud computing</span>, <span>cybersecurity</span>,{" "}
-        <span>React.js</span>, <span>Kubernetes </span>
-and much more. Here, I document my projects, interests and a way to
-reach me out. I always try to diversify my Knowledge and challenge
-myself. <span className="stayTuned">Stay tuned!!</span>
-    </div>
+export const getStaticProps: GetStaticProps = async () => {
 
-    const ContactInfo = <div className="ContactInfo">
-        <h1>Find me at:</h1>
-        <ul>
-            <li>linkedIn</li>
-            <li>github</li>
-            <li>codepen</li>
-            <li>YouTube</li>
-        </ul>
-    </div>
+    const WhatIUse: template = {
+        title: "What I use",
+        list: [ "next js",
+            "React js",
+            "C++",
+            "Linux",
+            "Docker",
+            "Google Cloud Platform",
+            "HTML5/CSS3/JS/TS" ]
+    }
+
+    const introduction: intro = {
+        content: " I'm a self-taught programmer with a passion for anything Linux, Networking, DevOps and web development. I write about Cloud computing,  cybersecurity, React.js,  Kubernetes and much more. Here, I document my projects, interests and a way to reach me out. I always try to diversify my Knowledge and challenge myself." 
+    }
+
+    const ContactInfo: template = {
+        title: "Find me at",
+        list: [ "linkedIn",
+        "github",
+        "codepen",
+        "YouTube" ]
+    }
 
     return {
-        props: [introduction, WhatIUse, ContactInfo]
+        props: {
+                introduction: introduction,
+                WhatIUse: WhatIUse,
+                ContactInfo: ContactInfo
+        }
     }
 }
 

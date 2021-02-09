@@ -94,14 +94,17 @@
           span{
             @apply font-mono font-bold text-third leading-9;
             &.stayTuned{
-              @apply block text-center py-5 font-extrabold;
+              @apply block text-xl text-center py-6 text-secondary;
             }
           }
         }
         h1{
-          @apply text-third text-4xl pt-16 font-bold text-center;
+          @apply text-secondary text-4xl pt-8 font-bold text-center;
         }
-
+        hr{
+          @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
+          width: 45%;
+        }
         ul{
 
         }
