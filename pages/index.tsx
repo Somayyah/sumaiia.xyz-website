@@ -28,8 +28,8 @@ export default function Home(props) {
         <h1>Find me at</h1>
         <hr />
         <ul>
-          {props.ContactInfo.list.map(item => (
-            <li>{item}</li>
+          {props.ContactInfo.list.map((item, index) => (
+            <li key={`contactInfo${index}`}>{item}</li>
           ))}
         </ul>
       </div>
