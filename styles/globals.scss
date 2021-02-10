@@ -1,8 +1,6 @@
 /* purgecss start ignore */
 
 @tailwind base;
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Montserrat&family=Rakkas&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Lateef&display=swap');
 
 :root {
   --primary:  #fcf4ec;
@@ -90,7 +88,7 @@
 
       & .pageContent{
         & .introduction{
-          @apply text-3xl px-6 py-6 leading-7 tracking-wide;
+          @apply text-2xl px-6 py-6 leading-7 tracking-widest;
           span{
             @apply font-mono font-bold text-third leading-9;
             &.stayTuned{
