@@ -1,11 +1,6 @@
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
-import dynamic from "next/dynamic"
-
-const Intro = dynamic(import("../components/Intro"))
-const WhatIUse = dynamic(import("../components/WhatIUse"))
-const Contact = dynamic(import("../components/Contact"))
-
+import parse from 'html-react-parser'
 
 export default function Home(props) {
   return (
@@ -13,13 +8,31 @@ export default function Home(props) {
       <Head>
         <meta charSet="utf-8" />
         <meta
-          name="description"
-          content="For DevOps, frontend and cloud computing. I write about IT automation, python, Controversial opinions, UI/UX design and Google Cloud Platform." />
-        <title>alt f4 - DevOps, Frontend, Cloud and Daring opinions</title>
+          name={props.name}
+          content={props.content} />
+        <title>{props.title}</title>
       </Head>
-      <Intro prop={props.introduction}/>
-      <WhatIUse prop={props.WhatIUse}/>
-      <Contact prop={props.ContactInfo}/>
+      <div className="introduction">
+        {parse(props.introduction.content)}
+      </div>
+      <div className='WhatIUse'>
+        <h1>What I use</h1>
+        <hr />
+        <ul>
+          {props.WhatIUse.list.map((item, index) => (
+            <li key={`WhatIUse${index}`}>{item}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="ContactInfo">
+        <h1>Find me at</h1>
+        <hr />
+        <ul>
+          {props.ContactInfo.list.map(item => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
@@ -30,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
     title: string;
     list: string[];
   }
-  
+
   interface intro {
     content: string;
   }
@@ -62,7 +75,10 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       introduction: introduction,
       WhatIUse: WhatIUse,
-      ContactInfo: ContactInfo
+      ContactInfo: ContactInfo,
+      title: "alt f4 - DevOps, Frontend, Cloud and Daring opinions",
+      name: "description",
+      content: "For DevOps, frontend and cloud computing. I write about IT automation, python, Controversial opinions, UI/UX design and Google Cloud Platform."
     }
   }
 }
