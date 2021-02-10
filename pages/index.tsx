@@ -8,7 +8,6 @@ const Contact = dynamic(import("../components/Contact"))
 
 
 export default function Home(props) {
-//  console.log(props.introduction)
   return (
     <>
       <Head>
