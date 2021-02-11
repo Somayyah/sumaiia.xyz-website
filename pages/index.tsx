@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
 import parse from 'html-react-parser'
+import { motion } from "framer-motion"
 
 export default function Home(props) {
   return (
@@ -12,10 +13,10 @@ export default function Home(props) {
           content={props.content} />
         <title>{props.title}</title>
       </Head>
-      <div className="introduction">
+      <motion.div className="introduction" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>
         {parse(props.introduction.content)}
-      </div>
-      <div className='WhatIUse'>
+      </motion.div>
+      <motion.div className='WhatIUse' animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>
         <h1>What I use</h1>
         <hr />
         <ul>
@@ -23,8 +24,8 @@ export default function Home(props) {
             <li key={`WhatIUse${index}`}>{item}</li>
           ))}
         </ul>
-      </div>
-      <div className="ContactInfo">
+      </motion.div>
+      <motion.div className="ContactInfo" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>
         <h1>Find me at</h1>
         <hr />
         <ul>
@@ -32,7 +33,7 @@ export default function Home(props) {
             <li key={`contactInfo${index}`}>{item}</li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </>
   )
 }
