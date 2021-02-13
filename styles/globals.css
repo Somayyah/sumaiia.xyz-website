@@ -99,6 +99,9 @@
     @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
     width: 45%;
   }
+  .minimalist main .pageContent img {
+    width: 100px;
+  }
   .minimalist footer {
     @apply left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
   }
