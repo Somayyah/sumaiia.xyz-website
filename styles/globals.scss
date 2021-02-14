@@ -88,11 +88,11 @@
 
       & .pageContent{
         & .introduction{
-          @apply text-2xl px-6 py-6 leading-7 tracking-widest;
+          @apply text-3xl px-6 py-6 leading-7 tracking-widest;
           span{
-            @apply font-mono font-bold text-third leading-9;
+            @apply text-2xl font-mono font-bold text-third leading-9;
             &.stayTuned{
-              @apply block text-xl text-center py-6 text-secondary;
+              @apply block text-2xl text-center py-6 text-secondary;
             }
           }
         }
@@ -103,14 +103,16 @@
           @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
           width: 45%;
         }
-        img{
-          width: 100px;
+        ul{
+          li{
+            @apply block font-mono text-center text-third text-3xl py-2;
+          }
         }
       }
     }
     
     footer{
-      @apply left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
+      @apply pt-3 left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
     }
   }
 }

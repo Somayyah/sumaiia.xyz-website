@@ -84,13 +84,13 @@
     height: 35px !important;
   }
   .minimalist main .pageContent .introduction {
-    @apply text-2xl px-6 py-6 leading-7 tracking-widest;
+    @apply text-3xl px-6 py-6 leading-7 tracking-widest;
   }
   .minimalist main .pageContent .introduction span {
-    @apply font-mono font-bold text-third leading-9;
+    @apply text-2xl font-mono font-bold text-third leading-9;
   }
   .minimalist main .pageContent .introduction span.stayTuned {
-    @apply block text-xl text-center py-6 text-secondary;
+    @apply block text-2xl text-center py-6 text-secondary;
   }
   .minimalist main .pageContent h1 {
     @apply text-secondary text-4xl pt-8 font-bold text-center;
@@ -99,11 +99,11 @@
     @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
     width: 45%;
   }
-  .minimalist main .pageContent img {
-    width: 100px;
+  .minimalist main .pageContent ul li {
+    @apply block font-mono text-center text-third text-3xl py-2;
   }
   .minimalist footer {
-    @apply left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
+    @apply pt-3 left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
   }
 }
 @tailwind components;

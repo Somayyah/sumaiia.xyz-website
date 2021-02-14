@@ -16,22 +16,24 @@ export default function Home(props) {
           content={props.content} />
         <title>{props.title}</title>
       </Head>
-      <motion.div className="introduction" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
+      <motion.div className="introduction" initial={{opacity: 0}} animate={{opacity: 1}} transition={{ duration: 1 }}>
         {parse(props.introduction.content)}
       </motion.div>
-      <div className='WhatIUse'>
-        <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>What I use</motion.h1>
-        <hr />
-        {props.WhatIUse.list.map((item, index) => (
-          <motion.img key={`WhatIUse${index}`} src={item}  initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}/>
-        ))}
-      </div>
-      <motion.div className="ContactInfo" style={{ scale: scrollYProgress }}>
-        <h1>Find me at</h1>
-        <hr />
+      <motion.div style={{ scale: scrollYProgress }} className='WhatIUse' >
+        <h1>What I use</h1>
+        <hr/>
+        <ul>
+          {props.WhatIUse.list.map((item, index) => (
+            <motion.li initial={{opacity: 0}} style={{ opacity: scrollYProgress }} key={`WhatIUse${index}`}>{item}</motion.li>
+          ))}
+        </ul>
+      </motion.div>
+      <motion.div style={{ scale: scrollYProgress }} className="ContactInfo">
+      <h1>Find me at</h1>
+      <hr/>
         <ul>
           {props.ContactInfo.list.map((item, index) => (
-            <li key={`contactInfo${index}`}>{item}</li>
+            <motion.li style={{ opacity: scrollYProgress }} key={`contactInfo${index}`}>{item}</motion.li>
           ))}
         </ul>
       </motion.div>
@@ -52,20 +54,13 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const WhatIUse: template = {
     title: "What I use",
-    list: [
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png",
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png",
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png",
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png",
-      "https://iconape.com/wp-content/files/an/351546/svg/tailwind-css-seeklogo.com.svg",
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png",
-      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png",
-      "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg/1200px-Linux_Logo_in_Linux_Libertine_Font.svg.png",
-      "https://newhorizons.com.sg/wp-content/uploads/2019/04/python.png"
-    ]
+    list: ["next js",
+      "React js",
+      "C++",
+      "Linux",
+      "Docker",
+      "Google Cloud Platform",
+      "HTML5/CSS3/JS/TS"]
   }
 
   const introduction: intro = {
