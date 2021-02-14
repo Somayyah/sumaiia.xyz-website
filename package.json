@@ -2,20 +2,37 @@
   "name": "using-preact",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "yarn run cass && next",
+    "build": "yarn run cass && next build",
+    "start": "next start",
+    "cass": "sass styles/globals.scss styles/globals.css"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
+    "terser-webpack-plugin": "^1.4.5",
+    "typescript": "^4.1.3",
+    "webpack": "^5.21.2"
+  },
   "dependencies": {
     "@prefresh/next": "^1.3.0",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.4",
+    "framer-motion": "^3.3.0",
+    "html-react-parser": "^1.2.4",
     "next": "^10.0.0",
     "next-plugin-preact": "^3.0.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss": "^8.2.6",
     "preact": "^10.5.5",
     "preact-render-to-string": "^5.1.11",
     "react": "npm:@preact/compat@^0.0.3",
     "react-dom": "npm:@preact/compat@^0.0.3",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2"
+    "react-emoji-render": "^1.2.4",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2",
+    "sass": "^1.32.7",
+    "tailwindcss": "^2.0.3"
   },
   "license": "MIT"
 }

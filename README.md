@@ -1,23 +1,35 @@
-# Preact example
+## Tasks
 
-This example uses [Preact](https://github.com/preactjs/preact) instead of React. It's a React like UI framework which is fast and small.
+* Tailwind theme switching :heavy_check_mark:
+  1. default :heavy_check_mark:
+    * light :heavy_check_mark:
+    * dark :heavy_check_mark:
+  2. minimalist :heavy_check_mark:
+    * light :heavy_check_mark:
+    * dark :heavy_check_mark:
 
-## How to use
+* Language theme switching
+  1. icons :heavy_check_mark:
+  2. Content switching
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+* Icons dynamic stroke color
 
-```bash
-npx create-next-app --example using-preact using-preact-app
-# or
-yarn create next-app --example using-preact using-preact-app
-```
+* Set default fonts :heavy_check_mark:
+  1. 'Montserrat', sans-serif :heavy_check_mark:
+  2. 'Inconsolata', monospace :heavy_check_mark:
+  3. arabic fonts :heavy_check_mark:
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+* Set adjustment portal
+  1. Change the color scheme
+  2. Change the font family
+  3. Change the font size
+  4. Change the complexity
 
-### Aliasing react -> preact
+* Set Nav bar
+  1. Set static routes :heavy_check_mark:
+  2. Set dynamic routes
+  3. Set styling
+    * Mobile view
+    * Desktop view
 
-Using `preact` with `next.js` depends on aliasing react packages to preact ones (like `@preact/compat`). This is done directly in the [`package.json`](./package.json) dependencies.
-
-### next-plugin-preact
-
-This example was [updated](https://github.com/vercel/next.js/pull/18588) to use [`next-plugin-preact`](https://github.com/preactjs/next-plugin-preact) and now requires minimal configuration, if you want to add preact without a plugin, or see how it works, head to the previous [`next.config.js`](https://github.com/vercel/next.js/blob/629884af7d3ced97b8c2ec7aebdfb1a3a5d808f0/examples/using-preact/next.config.js).
+* Configure Accessibility
