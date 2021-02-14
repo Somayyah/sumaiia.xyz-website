@@ -53,7 +53,7 @@
     @apply font-sans;
   }
   .minimalist .active {
-    @apply border-secondary border-b-2 py-4;
+    @apply border-secondary border-b-2 py-4 text-secondary;
   }
   .minimalist nav {
     @apply text-third bg-primary text-xl font-mono font-bold;
@@ -90,20 +90,35 @@
     @apply text-2xl font-mono font-bold text-third leading-9;
   }
   .minimalist main .pageContent .introduction span.stayTuned {
-    @apply block text-2xl text-center py-6 text-secondary;
+    @apply block text-2xl text-center py-3 text-third;
   }
   .minimalist main .pageContent h1 {
-    @apply text-secondary text-4xl pt-8 font-bold text-center;
+    @apply text-secondary text-4xl font-bold text-center;
   }
   .minimalist main .pageContent hr {
     @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
     width: 45%;
   }
   .minimalist main .pageContent ul li {
-    @apply block font-mono text-center text-third text-3xl py-2;
+    @apply block font-mono text-center text-third text-2xl py-1;
   }
   .minimalist footer {
-    @apply pt-3 left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
+    @apply p-3 left-0 bottom-0 flex flex-wrap -mx-1 overflow-hidden bg-third text-primary text-center;
+  }
+  .minimalist footer .subscibe {
+    @apply my-1 px-1 w-full overflow-hidden text-center;
+  }
+  .minimalist footer .contact {
+    @apply my-1 px-1 w-full overflow-hidden;
+  }
+  .minimalist footer .rights {
+    @apply my-1 px-1 w-full overflow-hidden flex flex-wrap -mx-1 overflow-hidden;
+  }
+  .minimalist footer .rights h1 {
+    @apply my-1 px-1 w-1/2 overflow-hidden;
+  }
+  .minimalist footer .rights p {
+    @apply my-1 px-1 w-1/2 overflow-hidden;
   }
 }
 @tailwind components;

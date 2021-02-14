@@ -54,7 +54,7 @@
   .minimalist{
     @apply font-sans;
     .active{
-      @apply  border-secondary border-b-2 py-4;
+      @apply  border-secondary border-b-2 py-4 text-secondary;
     }
     @apply font-sans;
     nav{
@@ -86,18 +86,19 @@
         }
       }
 
+
       & .pageContent{
         & .introduction{
           @apply text-3xl px-6 py-6 leading-7 tracking-widest;
           span{
             @apply text-2xl font-mono font-bold text-third leading-9;
             &.stayTuned{
-              @apply block text-2xl text-center py-6 text-secondary;
+              @apply block text-2xl text-center py-3 text-third;
             }
           }
         }
         h1{
-          @apply text-secondary text-4xl pt-8 font-bold text-center;
+          @apply text-secondary text-4xl font-bold text-center;
         }
         hr{
           @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
@@ -105,14 +106,30 @@
         }
         ul{
           li{
-            @apply block font-mono text-center text-third text-3xl py-2;
+            @apply block font-mono text-center text-third text-2xl py-1;
           }
         }
       }
     }
     
     footer{
-      @apply pt-3 left-0 bottom-0 w-full bg-primary text-secondary text-center border-t-2 border-secondary;
+      @apply p-3 left-0 bottom-0 flex flex-wrap -mx-1 overflow-hidden bg-third text-primary text-center;
+      & .subscibe{
+        @apply my-1 px-1 w-full overflow-hidden text-center;
+      }
+      & .contact{
+        @apply my-1 px-1 w-full overflow-hidden;
+      }
+      & .rights{
+        @apply my-1 px-1 w-full overflow-hidden flex flex-wrap -mx-1 overflow-hidden;
+        h1{
+          @apply my-1 px-1 w-1/2 overflow-hidden;
+        }
+        p{
+          @apply my-1 px-1 w-1/2 overflow-hidden;
+        }
+      }
+      
     }
   }
 }

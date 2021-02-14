@@ -12,13 +12,16 @@ const complex: any = <Twemoji svg text=":thunder_cloud_and_rain:"/>
 
 const minimalist: any = <Twemoji svg text=":cloud:"/>
 
+const love: any = <Twemoji svg text=":heart:"/>
+
 const ICONS: any = {
     arabic2Eng: arabic2Eng,
     eng2Arabic: eng2Arabic,
     light: light,
     dark: dark,
     complex: complex,
-    minimalist: minimalist
+    minimalist: minimalist,
+    love: love
 };
 
 export default ICONS
