@@ -1,4 +1,5 @@
 import Link from "./ActiveLink";
+import '../styles/local/components/nav.module.scss';
 import { useState } from 'react'
 
 function Nav() {
@@ -6,11 +7,11 @@ function Nav() {
 
 	return (
 		<>
-			<nav className={`navigation`}>
+			<nav className={styles.navbar}>
 				<ul className="">
 					<li>
 						<Link href="/">
-							<a onClick={() => setOpened(false)}>About me</a>
+							<a onClick={() => setOpened(false)}>About</a>
 						</Link>
 					</li>
 					<li>

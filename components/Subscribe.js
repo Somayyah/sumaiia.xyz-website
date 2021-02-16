@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks"
 import axios from "axios"
-import styles from "../styles/newsletter.module.css"
+import styles from "../styles/local/components/newsletter.module.scss"
 
 export default () => {
   const [email, setEmail] = useState("")

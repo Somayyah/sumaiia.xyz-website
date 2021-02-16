@@ -7,11 +7,9 @@
   --secondary: #6c844c;
   --third:#646464;
   --inverse: #fcc4cc;
-  --font-mono: 'Roboto Mono',monospace;
-  --font-sans: 'Montserrat', sans-serif;
+  --font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  --font-sans: 'Verdana', sans-serif;
   & .arabic {
-    --font-mono: 'Amiri', serif;
-    --font-sans: 'Rakkas', cursive;
   }
   & .dark {
     --primary: #03004C;
@@ -31,9 +29,8 @@
     --secondary: #fefefe;
   }
   &.arabic {
-    --font-mono: 'Aref Ruqaa', serif;
-    --font-sans: 'Lateef', cursive;
   }
+  @apply font-sans;
 }
 
 .skip-link{
@@ -52,24 +49,6 @@
 @screen xsm{
 
   .minimalist{
-    @apply font-sans;
-    .active{
-      @apply  border-secondary border-b-2 py-4 text-secondary;
-    }
-    @apply font-sans;
-    nav{
-      @apply text-third bg-primary text-xl font-mono font-bold;
-      ul {
-        @apply text-center m-auto w-11/12 py-4 right-1/2;
-        li{
-          @apply inline;
-          a{
-            @apply px-2;
-          }
-        }
-      }
-    }
-
     main{
       @apply bg-primary text-secondary;
       #customize {

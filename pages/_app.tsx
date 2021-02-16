@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import Nav from '../components/Nav'
 import ThemeButton from '../components/themeCustomizeButton'
 import LanguageSwitcher from '../components/LanguageSwitch'

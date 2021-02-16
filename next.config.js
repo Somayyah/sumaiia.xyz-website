@@ -1,5 +1,6 @@
 const withPreact = require('next-plugin-preact')
-
-module.exports = withPreact({
-  /* regular next.js config options here */
-})
+const withCSS = require('@zeit/next-sass')
+module.exports = {
+  withPreact({}),
+  withCSS({})
+}
