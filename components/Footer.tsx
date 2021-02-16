@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next'
 import ICONS from './icons'
+import SUBSCRIBE from './Subscribe'
 
 function Footer() {
   return (
@@ -7,6 +8,7 @@ function Footer() {
 
       <div className="subscribe">
         <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <SUBSCRIBE />
       </div>
 
       <div className="contact">

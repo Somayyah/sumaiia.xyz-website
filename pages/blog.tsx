@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from "next/link"
 import { GetStaticProps } from 'next'
 
 export default function Blog(props) {
@@ -12,9 +11,6 @@ export default function Blog(props) {
           content={props.content} />
         <title>{props.title}</title>
       </Head>
-      <Link href="/posts/first">
-        <a>Go to posts</a>
-      </Link>
     </>
   )
 }
