@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 
 function ActiveLink({ children, href }) {
-	const router = useRouter();
+	const router: any = useRouter();
 
-	const classN = router.pathname === href ? "active" : null;
+	const classN: string = router.pathname === href ? "active" : null;
 
 	const handleClick = (e) => {
 		e.preventDefault();
