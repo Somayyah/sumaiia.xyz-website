@@ -1,11 +1,10 @@
 import dynamic from 'next/dynamic'
 import '../styles/globals.scss'
 import Nav from '../components/Nav'
-import ThemeButton from '../components/themeCustomizeButton'
-import LanguageSwitcher from '../components/LanguageSwitch'
-import Complex from '../components/ComplexitySwitch'
 
 const Footer = dynamic(() => import('../components/Footer'))
+const Customizing = dynamic(() => import('../components/Customizing'))
+
 import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
@@ -24,11 +23,7 @@ function MyApp({ Component, pageProps }) {
         <section aria-label="main content" className="pageContent">
           <Component {...pageProps} />
         </section>
-        <section id="customize"  aria-label="customize the website">
-          <ThemeButton setTheme={setCustom} Custom={Custom}/>
-          <LanguageSwitcher setLanguage={setCustom} Custom={Custom}/>
-          <Complex setComplexity={setCustom} Custom={Custom}/>
-        </section>
+        <Customizing Custom={Custom} setCustom={setCustom}/>
       </main>
       <Footer />
     </div>

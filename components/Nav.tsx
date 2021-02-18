@@ -1,6 +1,6 @@
 import Link from "./ActiveLink";
 import styles from "../styles/local/components/navbar.module.scss"
-import { useState } from 'preact/hooks'
+import { useState } from 'react'
 
 function Nav() {
 	const [opened, setOpened] = useState(false)

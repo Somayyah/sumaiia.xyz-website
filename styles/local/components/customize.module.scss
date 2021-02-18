@@ -1,0 +1,15 @@
+@screen xsm{
+    .customize {
+        @apply inline fixed py-4;
+        top: 88%;
+        right: calc(50vw - (52.2px + 3rem));
+        button {
+          @apply px-4;
+          span img[style]{
+            @apply mx-3;
+            width: 35px !important;
+            height: 35px !important;
+          }
+        }
+    }
+}

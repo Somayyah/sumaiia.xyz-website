@@ -1,0 +1,21 @@
+@screen xsm{
+    .footer{
+        @apply p-3 left-0 bottom-0 flex flex-wrap -mx-1 overflow-hidden bg-third text-primary text-center;
+        & .subscibe{
+            @apply my-1 px-1 w-full overflow-hidden text-center;
+        }
+        & .contact{
+            @apply my-1 px-1 w-full overflow-hidden;
+        }
+        & .rights{
+            @apply my-1 px-1 w-full overflow-hidden flex flex-wrap -mx-1 overflow-hidden;
+            h1{
+            @apply my-1 px-1 w-1/2 overflow-hidden;
+            }
+            p{
+            @apply my-1 px-1 w-1/2 overflow-hidden;
+            }
+        }
+        
+        }
+}

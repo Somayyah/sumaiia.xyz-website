@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "declarations.d.ts"
-  ],
+, "components/ActiveLink.js"  ],
   "exclude": [
     "node_modules"
   ]

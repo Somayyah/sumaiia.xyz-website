@@ -1,17 +1,18 @@
 import { GetStaticProps } from 'next'
 import ICONS from './icons'
 import SUBSCRIBE from './Subscribe'
+import styles from "../styles/local/components/footer.module.scss"
 
 function Footer() {
   return (
-    <footer aria-label="footer">
+    <footer className={styles.footer} aria-label="footer">
 
-      <div className="subscribe">
+      <div className={styles.subscribe}>
         <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
         <SUBSCRIBE />
       </div>
 
-      <div className="contact">
+      <div className={styles.contact}>
         <p>FIND ME AT</p>
         <ul>
           <li>github</li>
@@ -21,7 +22,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div className="rights">
+      <div className={styles.rights}>
         <h1>Made With <span>{ICONS.love}</span> Using Next.js and Preact</h1>
         <p>All rights reserved.</p>
       </div>

@@ -1,0 +1,25 @@
+@screen xsm{
+    .introduction{
+        @apply text-3xl px-6 py-6 leading-7 tracking-widest;
+        span{
+          @apply text-2xl font-mono font-bold text-third leading-9;
+          &.stayTuned{
+            @apply block text-2xl text-center py-3 text-third;
+          }
+        }
+    }
+    .WhatIUse{
+        h1{
+            @apply text-secondary text-4xl font-bold text-center;
+        }
+        hr{
+            @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
+            width: 45%;
+        }
+        ul{
+            li{
+              @apply block font-mono text-center text-third text-2xl py-1;
+            }
+        }
+    }
+}

@@ -1,9 +1,6 @@
 @screen xsm{
     .navbar{
         @apply text-third bg-primary text-xl font-mono font-bold;
-        & .active{
-            @apply  border-secondary border-b-2 py-4 text-secondary;
-        }
         ul {
             @apply text-center m-auto w-11/12 py-4 right-1/2;
             li{

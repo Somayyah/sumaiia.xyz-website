@@ -21,11 +21,6 @@ export default () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.header}>Subscribe to my newsletter!</h2>
-      <p className={styles.details}>
-        It includes interesting tech content as well as some information on how
-        to live life to the fullest!
-      </p>
       <div>
         <input
           className={styles.input}
