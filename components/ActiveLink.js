@@ -1,9 +1,10 @@
 import { useRouter } from "next/router";
+import active from "../styles/local/components/navbaractive.module.scss"
 
 function ActiveLink({ children, href }) {
 	const router = useRouter();
 
-	const classN = router.pathname === href ? "active" : null;
+	const classN = router.pathname === href ? active.active : null;
 
 	const handleClick = (e) => {
 		e.preventDefault();

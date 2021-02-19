@@ -1,6 +1,6 @@
 @screen xsm{
     .customize {
-        @apply inline fixed py-4;
+        @apply inline fixed;
         top: 88%;
         right: calc(50vw - (52.2px + 3rem));
         button {
