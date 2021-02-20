@@ -23,8 +23,8 @@ function MyApp({ Component, pageProps }) {
         <section aria-label="main content" className="pageContent">
           <Component {...pageProps} />
         </section>
-        <Customizing Custom={Custom} setCustom={setCustom}/>
       </main>
+      <Customizing Custom={Custom} setCustom={setCustom}/>
       <Footer />
     </div>
   )

@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
 import parse from 'html-react-parser'
-import { motion, useViewportScroll } from "framer-motion"
 import styles from "../styles/local/pages/index.module.scss"
 
 export default function Home(props) {
-  const { scrollYProgress } = useViewportScroll()
 
   return (
     <div >
@@ -16,18 +14,18 @@ export default function Home(props) {
           content={props.content} />
         <title>{props.title}</title>
       </Head>
-      <motion.div className={styles.introduction} initial={{opacity: 0}} animate={{opacity: 1}} transition={{ duration: 1 }}>
+      <div className={styles.introduction}>
         {parse(props.introduction.content)}
-      </motion.div>
-      <motion.div style={{ scale: scrollYProgress }} className={styles.WhatIUse} >
+      </div>
+      <div className={styles.WhatIUse} >
         <h1>What I use</h1>
         <hr/>
         <ul>
           {props.WhatIUse.list.map((item, index) => (
-            <motion.li initial={{opacity: 0}} style={{ opacity: scrollYProgress }} key={`WhatIUse${index}`}>{item}</motion.li>
+            <li key={`WhatIUse${index}`}>{item}</li>
           ))}
         </ul>
-      </motion.div>
+      </div>
     </div>
   )
 }

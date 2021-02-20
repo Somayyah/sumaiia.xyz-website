@@ -13,7 +13,7 @@ export default function ComplexitySwitch({ setComplexity, Custom }) {
   }
 
 return (
-    <button className="" onClick={()=> {handleICON(); handlecomplexity()}}>
+    <button onClick={()=> {handleICON(); handlecomplexity()}}>
         {mode}
     </button>
     )

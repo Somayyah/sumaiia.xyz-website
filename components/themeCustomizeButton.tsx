@@ -15,7 +15,7 @@ export default function ThemeCustomizeButton({ setTheme, Custom }) {
   }
 
 return (
-    <button className="icon switchTheme" onClick={()=> {handleICON(); handleTheme()}}>
+    <button onClick={()=> {handleICON(); handleTheme()}}>
         {scheme}
     </button>
     )

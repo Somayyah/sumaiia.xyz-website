@@ -23,7 +23,7 @@ export default function LanguageSwitch({ setLanguage, Custom }) {
   }
 
 return (
-    <button aria-label={label} className="language" onClick={()=> {handleICON(); handlelanguage(); handlLabel()}}>
+    <button aria-label={label} onClick={()=> {handleICON(); handlelanguage(); handlLabel()}}>
         {icon}
     </button>
     )

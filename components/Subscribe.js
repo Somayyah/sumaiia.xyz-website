@@ -34,7 +34,7 @@ export default () => {
           disabled={state === "LOADING"}
           onClick={subscribe}
         >
-          {state === "LOADING" ? "Loading" : "Subscribe"}
+          {state === "LOADING" ? "Loading" : "Submit"}
         </button>
       </div>
       {state === "ERROR" && <p className={styles.errorMsg}>{errorMessage}</p>}
