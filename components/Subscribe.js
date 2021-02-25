@@ -20,8 +20,7 @@ export default () => {
   }
 
   return (
-    <div className={styles.container}>
-      <div>
+    <div >
         <input
           className={styles.input}
           type="text"
@@ -30,13 +29,13 @@ export default () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <button
+          className={styles.button}
           type="button"
           disabled={state === "LOADING"}
           onClick={subscribe}
         >
           {state === "LOADING" ? "Loading" : "Submit"}
         </button>
-      </div>
       {state === "ERROR" && <p className={styles.errorMsg}>{errorMessage}</p>}
       {state === "SUCCESS" && <p className={styles.successMsg}>Success!</p>}
     </div>

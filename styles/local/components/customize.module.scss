@@ -5,9 +5,12 @@
     right: calc(50vw - (52.2px + 3rem));
     button {
       @apply px-4;
-      span img[style]{
-        width: 35px !important;
-        height: 35px !important;
+      span{
+        display: block !important;
+        img{
+          width: 36px !important;
+          height: 36px !important;
+        }
       }
     }
   }

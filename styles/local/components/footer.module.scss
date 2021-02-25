@@ -1,21 +1,62 @@
 @screen xsm{
-    .footer{
-        @apply p-3 left-0 bottom-0 flex flex-wrap -mx-1 overflow-hidden bg-third text-primary text-center;
-        & .subscibe{
-            @apply my-1 px-1 w-full overflow-hidden text-center;
-        }
-        & .contact{
-            @apply my-1 px-1 w-full overflow-hidden;
-        }
-        & .rights{
-            @apply my-1 px-1 w-full overflow-hidden flex flex-wrap -mx-1 overflow-hidden;
-            h1{
-            @apply my-1 px-1 w-1/2 overflow-hidden;
+    .footer {
+        display: grid;
+        bottom: 0;
+        height: 30vh;
+        position: relative;
+        @apply bg-third;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "subscribe subscribe subscribe subscribe subscribe subscribe subscribe subscribe" "middle middle middle middle middle middle middle middle" "middle middle middle middle middle middle middle middle" "rights rights rights rights rights rights rights rights";
+        & .subscribe {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-area: subscribe;
+            & .subtitle {
+                grid-area: 2 / 2 / 3 / 6;
             }
-            p{
-            @apply my-1 px-1 w-1/2 overflow-hidden;
+            input {
+                grid-area: 3 / 2 / 5 / 6;
+            }
+              
+            button {
+                grid-area: 3 / 5 / 5 / 6;
             }
         }
-        
-    }
+        & .middle {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: ". . . . . ." ". contact contact h1 h1 ." ". contact contact h1 h1 ." ". contact contact h1 h1 ." ". contact contact h1 h1 ." ". . . . . .";
+            grid-area: middle;
+            & .contact {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: "title title title title" ". github medium ." ". linkedin . ." ". . . .";
+                grid-area: contact;
+                & .title {
+                    grid-area: title;
+                }
+                & .github {
+                    grid-area: github;
+                }
+                & .medium {
+                    grid-area: medium;
+                } 
+                & .linkedin {
+                    grid-area: linkedin;
+                }
+
+            }
+            h1 {
+                grid-area: h1;
+            }
+        }
+        & .rights {
+            width: 100vw;
+            grid-area: rights;
+        } 
+    }     
 }
