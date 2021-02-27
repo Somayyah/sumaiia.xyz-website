@@ -1,26 +1,21 @@
-@screen xsm{
-    .introduction{
-        @apply text-2xl px-6 py-6 leading-7 tracking-widest;
-        span, h1{
-          @apply font-mono font-bold text-third leading-9;
-        }
-        h1{
-          @apply text-center py-3;
-          margin:0 auto;
-        }
+.introduction{
+    @apply text-center text-2xl px-6 py-4 leading-7 tracking-widest;
+    span, h1{
+      @apply font-mono font-bold text-third leading-9;
     }
-    .WhatIUse{
-        h1{
-            @apply text-secondary text-4xl font-bold text-center;
-        }
-        hr{
-            @apply bg-secondary h-1 text-center mt-2 mb-2 m-auto;
-            width: 45%;
-        }
-        ul{
-            li{
-              @apply block font-mono text-center text-third text-2xl py-1;
-            }
-        }
+    h1{
+      @apply text-3xl py-4 text-secondary;
+      margin:0 auto;
     }
+}
+.WhatIUse{
+  ul{
+    justify-content:center;
+    align-items:center;
+    display: flex;  
+    flex-wrap: wrap;;
+    li{
+      @apply bg-secondary inline font-mono text-primary text-xl p-2 m-1 rounded-xl;
+    }
+  }
 }

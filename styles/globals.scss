@@ -19,6 +19,10 @@
   }
 }
 
+.main{
+  width: 100%;
+  margin: 0 auto;
+}
 .minimalist {
   --third: #7a7c81;
   --inverse: transparent;
@@ -46,12 +50,8 @@
   }
 }
 
-@screen xsm{
-  .minimalist{
-    main{
-      @apply bg-primary text-secondary;
-    }
-  }
+main{
+  @apply bg-primary text-secondary;
 }
 
 @tailwind components;

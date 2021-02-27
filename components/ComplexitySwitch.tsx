@@ -1,6 +1,5 @@
 import ICONS from '../components/icons'
 import { useState } from 'react'
-
 export default function ComplexitySwitch({ setComplexity, Custom }) {
   const [mode, setMode] = useState(ICONS.minimalist)
 
@@ -13,8 +12,8 @@ export default function ComplexitySwitch({ setComplexity, Custom }) {
   }
 
 return (
-    <button onClick={()=> {handleICON(); handlecomplexity()}}>
-        <img src={mode}/>
+    <button aria-label="switch website theme" onClick={()=> {handleICON(); handlecomplexity()}}>
+        <img alt="" src={mode}/>
     </button>
     )
 }

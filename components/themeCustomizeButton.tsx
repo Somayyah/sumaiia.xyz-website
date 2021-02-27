@@ -15,8 +15,8 @@ export default function ThemeCustomizeButton({ setTheme, Custom }) {
   }
 
 return (
-    <button onClick={()=> {handleICON(); handleTheme()}}>
-        <img src={scheme}/>
+    <button aria-label="Switch website color scheme" onClick={()=> {handleICON(); handleTheme()}}>
+        <img alt="" src={scheme}/>
     </button>
     )
 }

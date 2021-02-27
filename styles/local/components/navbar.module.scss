@@ -1,13 +1,11 @@
-@screen xsm{
-    .navbar{
-        @apply text-third bg-primary text-xl font-mono font-bold;
-        ul {
-            @apply text-center m-auto w-11/12 py-4 right-1/2;
-            li{
-                @apply inline;
-                a{
-                    @apply px-2;
-                }
+.navbar{
+    @apply text-third bg-primary text-2xl font-mono font-bold;
+    ul {
+        @apply text-center m-auto w-11/12 py-4 right-1/2;
+        li{
+            @apply inline;
+            a{
+                @apply px-2;
             }
         }
     }

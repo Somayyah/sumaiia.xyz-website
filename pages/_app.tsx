@@ -14,16 +14,14 @@ function MyApp({ Component, pageProps }) {
     language: "english"
   });
   return (
-    <div className={`${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
+    <div className={`main ${Custom.theme} ${Custom.complexity} ${Custom.language}`}>
       <Customizing Custom={Custom} setCustom={setCustom}/>
       <a href="#mainContent" className="skip-link">Skip to main content</a>
       <section aria-label="navigation menu">
         <Nav/>
       </section>
       <main id="mainContent" tabIndex={-1}>
-        <section aria-label="main content" className="pageContent">
-          <Component {...pageProps} />
-        </section>
+        <Component {...pageProps} />
       </main>
       <Footer />
     </div>

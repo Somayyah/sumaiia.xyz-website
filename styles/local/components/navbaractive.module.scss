@@ -1,5 +1,3 @@
-@screen xsm{
-  .active{
-      @apply border-secondary border-b-2 py-4 text-secondary;
-  }
+.active{
+    @apply border-secondary border-b-2 py-4 text-secondary;
 }
