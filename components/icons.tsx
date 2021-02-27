@@ -1,27 +1,27 @@
-import { Twemoji } from 'react-emoji-render';
+//import { Twemoji } from 'react-emoji-render';
 
-const arabic2Eng: any = <Twemoji text=":us:"/>
+const arabic2Eng: string = "http://twemoji.maxcdn.com/2/72x72/1f1fa-1f1f8.png"
 
-const eng2Arabic: any = <Twemoji text=":flag_saudi_arabia:"/>
+const eng2Arabic: string = "http://twemoji.maxcdn.com/2/72x72/1f1f8-1f1e6.png"
 
-const light: any = <Twemoji text=":sun:"/>
+const light: string = "http://twemoji.maxcdn.com/2/72x72/2600.png"
 
-const dark: any = <Twemoji text=":waxing_crescent_moon:"/>
+const dark: string = "http://twemoji.maxcdn.com/2/72x72/1f312.png"
 
-const complex: any = <Twemoji text=":thunder_cloud_and_rain:"/>
+const complex: string = "http://twemoji.maxcdn.com/2/72x72/26c8.png"
 
-const minimalist: any = <Twemoji text=":cloud:"/>
+const minimalist: string = "https://twemoji.maxcdn.com/2/72x72/2601.png"
 
-const love: any = <Twemoji text=":heart:"/>
+const love: string = "https://twemoji.maxcdn.com/2/72x72/2764.png"
 
 const ICONS: any = {
-    arabic2Eng: arabic2Eng,
-    eng2Arabic: eng2Arabic,
-    light: light,
-    dark: dark,
-    complex: complex,
-    minimalist: minimalist,
-    love: love
+  arabic2Eng: arabic2Eng,
+  eng2Arabic: eng2Arabic,
+  light: light,
+  dark: dark,
+  complex: complex,
+  minimalist: minimalist,
+  love: love
 };
 
 export default ICONS

@@ -1,11 +1,12 @@
 @screen xsm{
     .introduction{
-        @apply text-3xl px-6 py-6 leading-7 tracking-widest;
-        span{
-          @apply text-2xl font-mono font-bold text-third leading-9;
-          &.stayTuned{
-            @apply block text-2xl text-center py-3 text-third;
-          }
+        @apply text-2xl px-6 py-6 leading-7 tracking-widest;
+        span, h1{
+          @apply font-mono font-bold text-third leading-9;
+        }
+        h1{
+          @apply text-center py-3;
+          margin:0 auto;
         }
     }
     .WhatIUse{

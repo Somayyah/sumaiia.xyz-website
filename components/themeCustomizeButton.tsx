@@ -16,7 +16,7 @@ export default function ThemeCustomizeButton({ setTheme, Custom }) {
 
 return (
     <button onClick={()=> {handleICON(); handleTheme()}}>
-        {scheme}
+        <img src={scheme}/>
     </button>
     )
 }

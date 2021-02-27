@@ -14,7 +14,7 @@ export default function ComplexitySwitch({ setComplexity, Custom }) {
 
 return (
     <button onClick={()=> {handleICON(); handlecomplexity()}}>
-        {mode}
+        <img src={mode}/>
     </button>
     )
 }

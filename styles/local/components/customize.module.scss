@@ -1,16 +1,14 @@
 @screen xsm{
   .customize {
-    @apply inline fixed py-4;
+    z-index: 1;
+    @apply fixed inline py-4;
     top: 88%;
-    right: calc(50vw - (52.2px + 3rem));
+    right: calc(50vw - (52.5px + 3rem));
     button {
-      @apply px-4;
-      span{
-        display: block !important;
-        img{
-          width: 36px !important;
-          height: 36px !important;
-        }
+      @apply px-8;      
+      img{
+        height: 35px;
+        width: 35px;
       }
     }
   }
