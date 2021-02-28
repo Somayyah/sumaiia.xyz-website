@@ -10,7 +10,13 @@ const complex: string = "https://twemoji.maxcdn.com/2/72x72/26c8.png"
 
 const minimalist: string = "https://twemoji.maxcdn.com/2/72x72/2601.png"
 
-const love: string = "https://twemoji.maxcdn.com/2/72x72/2764.png"
+const github: string = "../images/github.svg"
+
+const youtube: string = "../images/youtube.svg"
+
+const medium: string = '../images/medium.svg'
+
+const twitter: string = '../images/twitter.svg'
 
 const ICONS: any = {
   arabic2Eng: arabic2Eng,
@@ -19,7 +25,10 @@ const ICONS: any = {
   dark: dark,
   complex: complex,
   minimalist: minimalist,
-  love: love
+  github: github,
+  youtube: youtube,
+  twitter: twitter,
+  medium: medium,
 };
 
 export default ICONS

@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
-import ICONS from './icons'
 import SUBSCRIBE from './Subscribe'
 import styles from "../styles/local/components/footer.module.scss"
+import Image from 'next/Image'
 
 function Footer() {
   return (
@@ -13,15 +13,13 @@ function Footer() {
       </div>
 
       <div className={styles.middle}>
-        <div className={styles.contact}>
-          <p className={styles.title}>FIND ME AT</p>
-          <ul>
-            <li className={styles.github}>Github</li>
-            <li className={styles.linkedin}>LinkedIn</li>
-            <li className={styles.medium}>Medium</li>
-          </ul>
-        </div>
-        <h1>Made With {ICONS.love} Using Next.js and Preact</h1>
+        <p className={styles.title}>FIND ME AT</p>
+        <ul>
+          <li className={styles.github}><Image src='/github.svg' alt="github profile" width="32" height="32" /></li>
+          <li className={styles.youtube}><Image src='/youtube.svg' alt="youtube profile" width="32" height="32" /></li>
+          <li className={styles.medium}><Image src='/medium.svg' alt="medium profile" width="32" height="32" /></li>
+          <li className={styles.twitter}><Image src='/twitter.svg' alt="twitter profile" width="32" height="32" /></li>
+        </ul>
       </div>
 
       <div className={styles.rights}>
