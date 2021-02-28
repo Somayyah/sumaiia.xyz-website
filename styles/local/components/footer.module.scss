@@ -1,3 +1,31 @@
 .footer {
-    
+    @apply text-lg text-secondary bg-third p-4;
+    height: 30vh;
+    width: 100%;
+    & .subscribe{
+        h1{
+            @apply text-center;
+        }
+    }
+    & .middle{
+        p{
+            text-align: center;
+        }
+        ul{
+            justify-content:center;
+            align-items:center;
+            display: flex;  
+            flex-wrap: wrap;
+            li{
+                display: inline;
+                padding: 0.5em;
+            }
+        }
+    }
+    & .rights{
+        p{
+           font: 10px sans-serif;
+           text-align:center;
+        }
+    }
 }     

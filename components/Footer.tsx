@@ -8,7 +8,7 @@ function Footer() {
     <footer className={styles.footer} aria-label="footer">
 
       <div className={styles.subscribe}>
-        <h1 className={styles.subtitle}>SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <h1 className={styles.subtitle}>SUBSCRIBE TO MY NEWSLETTER</h1>
         <SUBSCRIBE />
       </div>
 
@@ -23,7 +23,7 @@ function Footer() {
       </div>
 
       <div className={styles.rights}>
-        <p>All rights reserved.</p>
+        <p>Copyright &copy; Sumaia Mohammed 2021 All rights reserved.</p>
       </div>
 
     </footer>

@@ -1,12 +1,12 @@
 .customize {
-  @apply fixed inline py-4;
+  @apply fixed py-4;
   top: 88%;
-  right: calc(50vw - (52.5px + 3rem));
+  right: calc(50vw - (48px + 3rem));
   button {
-    @apply px-8;      
+    @apply px-8 inline;      
     img{
-      height: 35px;
-      width: 35px;
+      height: 32px;
+      width: 32px;
     }
   }
 }
