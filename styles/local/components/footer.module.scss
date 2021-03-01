@@ -13,9 +13,9 @@
     & .middle{
         margin: auto;
         border-top: 2px solid;
-        @apply px-2 mt-2;
+        @apply px-2 mt-1;
         legend{
-            @apply p-2;
+            @apply pb-2;
             font-size: 0.8em;
         }
         ul{

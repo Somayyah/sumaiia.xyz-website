@@ -14,10 +14,10 @@ function Footer() {
       <fieldset className={styles.middle}>
         <legend className={styles.title}>FIND ME AT</legend>
         <ul>
-          <li className={styles.github}><a href="https://github.com/somayyah" target="_blank"><Image src='/github.svg' alt="github profile" width="25" height="25"/></a></li>
-          <li className={styles.youtube}><a href="https://www.youtube.com/channel/UCV91hFH6IHsl6-sxbLmMtfA" target="_blank"><Image src='/youtube.svg' alt="youtube profile" width="25" height="25"/></a></li>
-          <li className={styles.medium}><a href="https://medium.com/@sumaiiaxyz" target="_blank" ><Image src='/medium.svg' alt="medium profile" width="25" height="25"/></a></li>
-          <li className={styles.twitter}><a href="#" target="_blank"><Image src='/rss.svg' alt="twitter profile" width="20" height="20"/></a></li>
+          <li className={styles.github}><a href="https://github.com/somayyah" target="_blank"><Image src='/github.svg' alt="github profile" width="25" height="25" /></a></li>
+          <li className={styles.youtube}><a href="https://www.youtube.com/channel/UCV91hFH6IHsl6-sxbLmMtfA" target="_blank"><Image src='/youtube.svg' alt="youtube profile" width="25" height="25" /></a></li>
+          <li className={styles.medium}><a href="https://medium.com/@sumaiiaxyz" target="_blank" ><Image src='/medium.svg' alt="medium profile" width="25" height="25" /></a></li>
+          <li className={styles.twitter}><a href="#" target="_blank"><Image src='/rss.svg' alt="twitter profile" width="20" height="20" /></a></li>
         </ul>
       </fieldset>
       <div className={styles.rights}>
