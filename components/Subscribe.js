@@ -20,24 +20,25 @@ export default () => {
   }
 
   return (
-    <div >
-        <input
-          className={styles.input}
-          type="text"
-          placeholder="Enter Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button
-          className={styles.button}
-          type="button"
-          disabled={state === "LOADING"}
-          onClick={subscribe}
-        >
-          {state === "LOADING" ? "Loading" : "Submit"}
-        </button>
+    <fieldset className={styles.container}>
+      <legend className={styles.subtitle}>SUBSCRIBE TO MY NEWSLETTER</legend>
+      <input
+        className={styles.input}
+        type="text"
+        placeholder="Enter Your Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <button
+        className={styles.button}
+        type="button"
+        disabled={state === "LOADING"}
+        onClick={subscribe}
+      >
+        {state === "LOADING" ? "Loading" : "Submit"}
+      </button>
       {state === "ERROR" && <p className={styles.errorMsg}>{errorMessage}</p>}
       {state === "SUCCESS" && <p className={styles.successMsg}>Success!</p>}
-    </div>
+    </fieldset>
   )
 }

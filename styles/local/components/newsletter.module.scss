@@ -1,3 +1,27 @@
-input{
-    
+.container{
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    border-top: 2px solid;
+    @apply px-2;
+    legend{
+        @apply px-2;
+        font-size: 0.8em;
+    }
+    input[type="text"]{
+        width: 100%;
+        margin: auto;
+        border: none;
+        @apply bg-primary my-2 text-sm;
+        height: 35px;
+        padding: 0 15px;
+    }
+    button{
+        height: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @apply bg-secondary text-sm text-primary p-2 m-2;
+    }
 }

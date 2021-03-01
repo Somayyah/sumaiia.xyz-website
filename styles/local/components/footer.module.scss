@@ -1,15 +1,22 @@
 .footer {
-    @apply text-lg text-secondary bg-third p-4;
+    @apply text-lg text-secondary bg-third p-4 mt-4;
     height: 30vh;
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
     & .subscribe{
+        @apply pt-2;
         h1{
             @apply text-center;
         }
     }
     & .middle{
-        p{
-            text-align: center;
+        margin: auto;
+        border-top: 2px solid;
+        @apply px-2 mt-2;
+        legend{
+            @apply p-2;
+            font-size: 0.8em;
         }
         ul{
             justify-content:center;
@@ -18,14 +25,17 @@
             flex-wrap: wrap;
             li{
                 display: inline;
-                padding: 0.5em;
+                @apply px-4;
             }
         }
     }
     & .rights{
         p{
            font: 10px sans-serif;
-           text-align:center;
+           bottom: 5px; 
+           width:100%; 
+           position: absolute;
+           text-align: center;
         }
     }
 }     
