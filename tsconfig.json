@@ -22,8 +22,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "declarations.d.ts"
-, "components/ActiveLink.js"  ],
+    "declarations.d.ts",
+    "components/ActiveLink.js", 
+    "components/Subscribe.js",
+    "pages/newsletter.js" ],
   "exclude": [
     "node_modules"
   ]

@@ -11,6 +11,7 @@ export default function Blog(props) {
   props.articles.map(article => {
     console.log(article.fields.title)
   })
+  console.log(props.articles)
   return (
     <>
       <Head>
@@ -24,9 +25,7 @@ export default function Blog(props) {
         {props.articles.map(article => (
           <li key={article.sys.id}>
             <Link href={'/blog/' + article.fields.slug}>
-              <a href="">
-              {article.fields.title}
-              </a>
+              <a>{article.fields.title}</a>
             </Link>
           </li>
         ))}
