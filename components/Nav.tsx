@@ -14,11 +14,6 @@ function Nav() {
 							<a onClick={() => setOpened(false)}>About</a>
 						</Link>
 					</li>
-					<li>
-						<Link href="/projects">
-							<a onClick={() => setOpened(false)}>Projects</a>
-						</Link>
-					</li>
 
 					<li>
 						<Link href="/blog">
@@ -32,3 +27,11 @@ function Nav() {
 }
 
 export default Nav;
+
+/**
+ 					<li>
+						<Link href="/projects">
+							<a onClick={() => setOpened(false)}>Projects</a>
+						</Link>
+					</li>
+ */
