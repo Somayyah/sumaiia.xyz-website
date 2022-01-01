@@ -8,10 +8,6 @@ let client = require('contentful').createClient({
 })
 
 export default function Blog(props) {
-  props.articles.map(article => {
-    console.log(article.fields.title)
-  })
-  console.log(props.articles)
   return (
     <>
       <Head>

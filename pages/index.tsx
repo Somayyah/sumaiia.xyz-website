@@ -15,7 +15,7 @@ export default function Home(props) {
       </Head>
       <div className={styles.introduction}>
         <p>
-          I'm a self-taught programmer with a passion for anything <span>Linux</span>,<span> Networking</span>, <span>DevOps</span> and <span>web development</span>. I write about <span>Cloud computing</span>, <span>cybersecurity</span>, <span>React.js</span>, <span>Kubernetes </span> and much more. Here, I document my projects, interests and a way to reach me out. I always try to diversify my Knowledge and challenge myself.<h1 className='stayTuned'>Stay tuned!!</h1>
+I'm a self-taught programmer with a passion for anything Linux, Networking, DevOps, and web development. I write about Cloud computing, cybersecurity, React.js, Kubernetes, and much more. Here, I document my projects, interests, and a way to reach out. I always try to diversify my knowledge and challenge myself.
         </p>
       </div>
       <div className={styles.WhatIUse} >
@@ -36,10 +36,6 @@ export const getStaticProps: GetStaticProps = async () => {
     list: string[];
   }
 
-  interface intro {
-    content: string;
-  }
-
   const WhatIUse: template = {
     title: "What I use",
     list: [
@@ -48,9 +44,9 @@ export const getStaticProps: GetStaticProps = async () => {
       "C++",
       "Linux",
       "Docker",
-      "Google Cloud Platform",
+      "GCP",
       "HTML5/CSS3/JS/TS",
-      "Microsoft Azure",
+      "MS Azure",
       "Rust",
       "Python",
       "C/C++"

@@ -1,6 +1,6 @@
 .footer {
     @apply text-lg text-secondary bg-third p-4 mt-4;
-    height: 30vh;
+    height: 35vh;
     width: 100vw;
     position: relative;
     overflow-x: hidden;
@@ -15,7 +15,7 @@
         border-top: 2px solid;
         @apply px-2 mt-1;
         legend{
-            @apply p-2;
+            @apply px-2;
             font-size: 0.8em;
         }
         ul{

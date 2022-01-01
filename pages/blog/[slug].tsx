@@ -35,10 +35,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 export default function Article({ article }) {
-
     return <article>
         <h1>{article.fields.title}</h1>
-        {article.fields.content}
+        {article.fields.content.content[0].content[0].value}
     </article>
 
 }

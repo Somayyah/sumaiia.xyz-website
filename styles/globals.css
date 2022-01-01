@@ -1,0 +1,40 @@
+/* purgecss start ignore */
+@tailwind base;
+:root {
+  --third: #7a7c81;
+  --inverse: transparent;
+  --primary: #fefefe;
+  --secondary: #0f0f0f;
+  @apply font-sans;
+  --font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  --font-sans: "Verdana", sans-serif;
+}
+
+.push {
+  height: 30vh;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #BF1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+main {
+  @apply bg-primary text-secondary;
+  min-height: 100vh;
+  margin-bottom: -30vh;
+}
+
+@tailwind components;
+@tailwind utilities;
+/* purgecss end ignore */
+
+/*# sourceMappingURL=globals.css.map */
