@@ -8,7 +8,7 @@ function Footer() {
     <footer className={styles.footer} aria-label="footer">
 
       <div className={styles.subscribe}>
-        <SUBSCRIBE />
+        <SUBSCRIBE /> 
       </div>
 
       <fieldset className={styles.middle}>
@@ -18,7 +18,7 @@ function Footer() {
           <li className={styles.youtube}><a href="https://www.youtube.com/channel/UCV91hFH6IHsl6-sxbLmMtfA" target="_blank"><Image src='/youtube.svg' alt="youtube profile" width="25" height="25" /></a></li>
           <li className={styles.medium}><a href="https://medium.com/@sumaiiaxyz" target="_blank" ><Image src='/medium.svg' alt="medium profile" width="25" height="25" /></a></li>
         </ul>
-      </fieldset>
+      </fieldset> 
       <div className={styles.rights}>
         <p>Copyright &copy; Sumaia Mohammed 2021 All rights reserved.</p>
       </div>
