@@ -1,5 +1,5 @@
 import Link from "./ActiveLink";
-import styles from "../styles/local/components/navbar.module.scss"
+//import styles from "../styles/local/components/navbar.module.scss"
 import { useState } from 'react'
 
 function Nav() {
@@ -7,7 +7,7 @@ function Nav() {
 
 	return (
 		<>
-			<nav className={styles.navbar}>
+			<nav >
 				<ul className="">
 					<li>
 						<Link href="/">
