@@ -1,16 +1,19 @@
 @import "global-variables.scss";
 
 .minimalist{
-    
-}
+    &.dark{
 
-.dark{
-
-}
-.light{
-    
+    }
+    &.light{
+        
+    }
 }
 
 .complex{
+    &.dark{
 
+    }
+    &.light{
+        
+    }
 }
