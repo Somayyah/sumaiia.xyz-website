@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next'
 import SUBSCRIBE from './Subscribe'
-//import styles from "../styles/local/components/footer.module.scss"
+import styles from "../styles/local/components/footer.module.scss"
 import Image from 'next/Image'
 
 function Footer() {

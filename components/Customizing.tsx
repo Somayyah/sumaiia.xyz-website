@@ -2,7 +2,7 @@
 import ThemeButton from '../components/themeCustomizeButton'
 import LanguageSwitcher from '../components/LanguageSwitch'
 import Complex from '../components/ComplexitySwitch'
-//import styles from "../styles/local/components/customize.module.scss"
+import styles from "../styles/local/components/customize.module.scss"
 
 function Customizing({setCustom, Custom}) {
     return(
