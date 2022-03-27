@@ -1,33 +1,21 @@
-@import "global-variables.scss";
+@use "global-variables.scss" as g;
 
-.minimalist{
+@import url(g.$f-import-minimalist);
+
+.minimalist, .complex{
     
     &.english{
-        $font-primary: Helvetica, sans-serif;
-        $font-titles: classic, serif;
+        h1, h2, h3, h4, h5, h6, ul, legend{
+            font-family: g.$f-primary-minimalist-english;
+        }
+
+        p, article {
+            font-family: g.$f-secondary-minimalist-english;
+        }
     }
 
     &.arabic{
 
-    }
-
-    &.dark{
-
-    }
-    &.light{
-        
-    }
-}
-
-.complex{
-
-    &.english{
-        $font-primary: Helvetica, sans-serif;
-        $font-titles: classic, serif;
-    }
-
-    &.arabic{
-        
     }
 
     &.dark{

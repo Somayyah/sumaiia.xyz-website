@@ -1,8 +1,9 @@
 // fonts
 
-$f-primary-minimalist-english: Helvetica, sans-serif;
-$f-secondary-minimalist-english: classic, serif;
+$f-primary-minimalist-english: 'Quattrocento', serif;
+$f-secondary-minimalist-english: 'Source Sans Pro', sans-serif;
 $f-accent-minimalist-english: $f-secondary-minimalist-english;
+$f-import-minimalist: 'https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap';
 
 $f-primary-minimalist-arabic: Helvetica, sans-serif;
 $f-secondary-minimalist-arabic: classic, serif;
@@ -16,15 +17,19 @@ $f-primary-complex-arabic: Helvetica, sans-serif;
 $f-secondary-complex-arabic: classic, serif;
 $f-accent-complex-arabic: classic, serif;
 
+// font styles
+
 // colours
 
-$c-primary-minimalist: Helvetica, sans-serif;
-$c-secondary-minimalist: classic, serif;
+$c-primary-minimalist: black;
+$c-secondary-minimalist: white;
 $c-accent-minimalist: $c-secondary-minimalist;
 
 $c-primary-complex: Helvetica, sans-serif;
 $c-secondary-complex: classic, serif;
 $c-accent-complex: $c-secondary-complex;
+
+// opacity 
 
 // shadow
 
