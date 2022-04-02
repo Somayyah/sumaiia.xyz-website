@@ -1,6 +1,10 @@
-@use "global-variables.scss" as g;
+@import "global-variables.scss";
 
-@import url(g.$f-import-minimalist);
+@import url(map.get($fonts-english, "f-import-minimalist"));
+
+@each  $key, $val in $fonts-english{
+
+}
 
 .minimalist, .complex{
     

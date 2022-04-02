@@ -1,9 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap");
-.minimalist.english h1, .minimalist.english h2, .minimalist.english h3, .minimalist.english h4, .minimalist.english h5, .minimalist.english h6, .minimalist.english ul, .minimalist.english legend, .complex.english h1, .complex.english h2, .complex.english h3, .complex.english h4, .complex.english h5, .complex.english h6, .complex.english ul, .complex.english legend {
-  font-family: "Quattrocento", serif;
-}
-.minimalist.english p, .complex.english p {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-/*# sourceMappingURL=globals.css.map */

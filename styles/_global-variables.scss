@@ -1,38 +1,48 @@
-// fonts
-
-$f-primary-minimalist-english: 'Quattrocento', serif;
-$f-secondary-minimalist-english: 'Source Sans Pro', sans-serif;
-$f-accent-minimalist-english: $f-secondary-minimalist-english;
-$f-import-minimalist: 'https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap';
-
-$f-primary-minimalist-arabic: Helvetica, sans-serif;
-$f-secondary-minimalist-arabic: classic, serif;
-$f-accent-minimalist-arabic: $f-secondary-minimalist-arabic;
-
-$f-primary-complex-english: Helvetica, sans-serif;
-$f-secondary-complex-english: classic, serif;
-$f-accent-complex-english: classic, serif;
-
-$f-primary-complex-arabic: Helvetica, sans-serif;
-$f-secondary-complex-arabic: classic, serif;
-$f-accent-complex-arabic: classic, serif;
-
-// font styles
-
-// colours
-
-$c-primary-minimalist: black;
-$c-secondary-minimalist: white;
-$c-accent-minimalist: $c-secondary-minimalist;
-
-$c-primary-complex: Helvetica, sans-serif;
-$c-secondary-complex: classic, serif;
-$c-accent-complex: $c-secondary-complex;
-
-// opacity 
-
-// shadow
-
-// borders
-
-// corners
+$themes:(
+    $minimalist:(
+        $fn:(
+            $english:(
+                "primary": 'Quattrocento, serif',
+                "secondary": 'Source Sans Pro, sans-serif',
+                "accent": 'Ultra, serif',
+                "import": 'https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap',
+            ),
+            $arabic:(
+                "primary": 'Quattrocento, serif',
+                "secondary": 'Source Sans Pro, sans-serif',
+                "accent": 'Ultra, serif',
+                "import": 'https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap',
+            ),
+        ),
+        $cl:(
+            $light:(
+    
+            ),
+            $dark:(
+                "primary": black,
+                "secondary": white,
+                "accent": gray,
+            )
+        )
+    ),
+    $complex(
+        $a:(
+            $fn:(
+                english:(
+                    "primary": 'Helvetica, sans-serif',
+                    "secondary": 'classic, serif',
+                    "accent": 'classic, serif',
+                ),
+                arabic:(
+                    "primary": 'Helvetica, sans-serif',
+                    "secondary": 'classic, serif',
+                    "accent": 'classic, serif',
+                ),
+            ),
+            $cl:(
+                light:(),
+                dark:()
+            )
+        )
+    )
+);

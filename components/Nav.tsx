@@ -1,5 +1,6 @@
 import Link from "./ActiveLink";
 import styles from "../styles/local/components/navbar.module.scss"
+import ThemeCustomizeButton from './themeCustomizeButton'
 import { useState } from 'react'
 
 function Nav() {
@@ -20,7 +21,7 @@ function Nav() {
 							<a onClick={() => setOpened(false)}>Blog</a>
 						</Link>
 					</li>
-
+				
 				</ul>
 			</nav>
 		</>
