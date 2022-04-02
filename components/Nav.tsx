@@ -1,9 +1,12 @@
 import Link from "./ActiveLink";
 import styles from "../styles/local/components/navbar.module.scss"
-import ThemeCustomizeButton from './themeCustomizeButton'
 import { useState } from 'react'
+import ModeButton from '../components/modeCustomizeButton'
+import LanguageSwitcher from '../components/LanguageSwitch'
+import Complex from '../components/ComplexitySwitch'
 
-function Nav() {
+
+function Nav({setCustom, Custom}) {
 	const [opened, setOpened] = useState(false)
 
 	return (
@@ -21,7 +24,12 @@ function Nav() {
 							<a onClick={() => setOpened(false)}>Blog</a>
 						</Link>
 					</li>
-				
+					<section id="customize" aria-label="customize the website">
+						<ModeButton setMode={setCustom} Custom={Custom} />
+						<LanguageSwitcher setLanguage={setCustom} Custom={Custom} />
+						<Complex setComplexity={setCustom} Custom={Custom} />
+					</section>
+
 				</ul>
 			</nav>
 		</>
@@ -31,7 +39,7 @@ function Nav() {
 export default Nav;
 
 /**
- 					<li>
+						<li>
 						<Link href="/projects">
 							<a onClick={() => setOpened(false)}>Projects</a>
 						</Link>

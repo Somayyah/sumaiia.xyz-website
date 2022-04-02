@@ -1,5 +1,6 @@
 import ICONS from '../components/icons'
 import { useState } from 'react'
+
 export default function ComplexitySwitch({ setComplexity, Custom }) {
   const [mode, setMode] = useState(ICONS.minimalist)
 

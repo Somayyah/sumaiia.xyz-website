@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ICONS from "./icons"
 
-export default function ThemeCustomizeButton({ setTheme, Custom }) {
+export default function ModeCustomizeButton({ setMode, Custom }) {
   const [scheme, setScheme] = useState(ICONS.light)
 
   const handleICON = () => {
@@ -10,12 +10,12 @@ export default function ThemeCustomizeButton({ setTheme, Custom }) {
     : setScheme(ICONS.light)
   }
 
-  const handleTheme = () => {
-    Custom.theme === "dark" ? setTheme({...Custom, theme: ""}) : setTheme({...Custom, theme: "dark"})
+  const handleMode = () => {
+    Custom.mode === "dark" ? setMode({...Custom, mode: ""}) : setMode({...Custom, mode: "dark"})
   }
 
 return (
-    <button aria-label="Switch website color scheme" onClick={()=> {handleICON(); handleTheme()}}>
+    <button aria-label="Switch website color scheme" onClick={()=> {handleICON(); handleMode()}}>
         <img alt="" src={scheme}/>
     </button>
     )
