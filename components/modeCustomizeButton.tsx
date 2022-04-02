@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import ICONS from "./icons"
+import { useState } from 'react'
 
 export default function ModeCustomizeButton({ setMode, Custom }) {
   const [scheme, setScheme] = useState(ICONS.emoji)
