@@ -6,7 +6,7 @@ const Footer = dynamic(() => import('../components/Footer'))
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className={`main minimalist english`}>
+    <div className={`minimalist english`}>
       <a href="#mainContent" className="skip-link">Skip to main content</a>
       <section aria-label="navigation menu">
         <Nav/>

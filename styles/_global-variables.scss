@@ -1,51 +1,52 @@
 $minimalist:(
     // fonts
-    $fn:(
-        $english:(
+    fn:(
+        english:(
             "primary": 'Quattrocento, serif',
             "secondary": 'Source Sans Pro, sans-serif',
             "accent": 'Ultra, serif',
             "import": 'https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap',
         ),
-        $arabic:(
+        arabic:(
             "primary": 'Quattrocento, serif',
             "secondary": 'Source Sans Pro, sans-serif',
             "accent": 'Ultra, serif',
             "import": 'https://fonts.googleapis.com/css2?family=Quattrocento&family=Source+Sans+Pro&family=Ultra&display=swap',
         ),
+        style:(),
+        size:()
     ),
     // colors
-    $cl:(
-        $light:(
+    cl:(
+        light:(
 
         ),
-        $dark:(
+        dark:(
             "primary": black,
             "secondary": white,
             "accent": gray,
         )
     )
-),
-$complex(
-    // theme a
-    $a:(
-        // fonts
-        $fn:(
-            english:(
-                "primary": 'Helvetica, sans-serif',
-                "secondary": 'classic, serif',
-                "accent": 'classic, serif',
-            ),
-            arabic:(
-                "primary": 'Helvetica, sans-serif',
-                "secondary": 'classic, serif',
-                "accent": 'classic, serif',
-            ),
+);
+$complex:(
+    // fonts
+    fn:(
+        english:(
+            "primary": 'Helvetica, sans-serif',
+            "secondary": 'classic, serif',
+            "accent": 'classic, serif',
         ),
-        // colors
-        $cl:(
-            light:(),
-            dark:()
-        )
+        arabic:(
+            "primary": 'Helvetica, sans-serif',
+            "secondary": 'classic, serif',
+            "accent": 'classic, serif',
+        ),
+        style:(),
+        size:()
+    ),
+    // colors
+    cl:(
+        light:(),
+        dark:()
     )
 );
